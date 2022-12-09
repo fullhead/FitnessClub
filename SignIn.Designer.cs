@@ -64,7 +64,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(496, 366);
             this.tableLayoutPanel1.TabIndex = 1;
-            this.tableLayoutPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.tableLayoutPanel1_MouseMove);
+            this.tableLayoutPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TableLayoutPanel1_MouseMove);
             // 
             // label1
             // 
@@ -112,7 +112,7 @@
             this.textBox2.Size = new System.Drawing.Size(331, 34);
             this.textBox2.TabIndex = 14;
             this.textBox2.UseSystemPasswordChar = true;
-            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox2_KeyPress);
             // 
             // label3
             // 
@@ -140,6 +140,7 @@
             this.ВходButton.TabIndex = 15;
             this.ВходButton.Text = "Вход";
             this.ВходButton.UseVisualStyleBackColor = true;
+            this.ВходButton.Click += new System.EventHandler(this.ВходButton_Click);
             // 
             // SignIn
             // 
@@ -149,13 +150,15 @@
             this.ClientSize = new System.Drawing.Size(496, 366);
             this.Controls.Add(this.tableLayoutPanel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(514, 413);
-            this.MinimumSize = new System.Drawing.Size(514, 413);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SignIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Вход";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SignIn_FormClosed);
+            this.Load += new System.EventHandler(this.SignIn_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
