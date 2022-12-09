@@ -27,7 +27,7 @@ namespace FitnessClub
             Tablet.Fill(dt);
             if (dt.Rows[0][0].ToString() == "1")
             {
-                FitnessClub fitnessClub = new FitnessClub();
+                Fitness_Club fitnessClub = new Fitness_Club();
                 fitnessClub.Show();
                 this.Hide();
             }

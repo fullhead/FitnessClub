@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using System.Collections;
 using System.Drawing.Printing;
 
-namespace AccountingOfSalariesAndPersonnel
+namespace FitnessClub
 {
     internal class Class_Print
     {

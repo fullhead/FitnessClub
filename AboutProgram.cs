@@ -14,5 +14,10 @@ namespace FitnessClub
         {
             this.Hide();
         }
+
+        private void AboutProgram_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
