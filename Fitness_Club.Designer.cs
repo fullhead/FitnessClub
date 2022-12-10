@@ -53,6 +53,54 @@
             System.Windows.Forms.Label coachAddressLabel1;
             System.Windows.Forms.Label coachEmailLabel1;
             System.Windows.Forms.Label coachIDLabel1;
+            System.Windows.Forms.Label staffIDLabel;
+            System.Windows.Forms.Label staffNameLabel;
+            System.Windows.Forms.Label staffPositionLabel;
+            System.Windows.Forms.Label label1;
+            System.Windows.Forms.Label label2;
+            System.Windows.Forms.Label staffIDLabel1;
+            System.Windows.Forms.Label fitnessClubIDLabel;
+            System.Windows.Forms.Label fitnessClubHallLabel;
+            System.Windows.Forms.Label fitnessClubAddressLabel;
+            System.Windows.Forms.Label fitnessClubTelephoneLabel;
+            System.Windows.Forms.Label label4;
+            System.Windows.Forms.Label label5;
+            System.Windows.Forms.Label label6;
+            System.Windows.Forms.Label label3;
+            System.Windows.Forms.Label label7;
+            System.Windows.Forms.Label label15;
+            System.Windows.Forms.Label label16;
+            System.Windows.Forms.Label label17;
+            System.Windows.Forms.Label label18;
+            System.Windows.Forms.Label label8;
+            System.Windows.Forms.Label documentIDLabel;
+            System.Windows.Forms.Label clientIDLabel;
+            System.Windows.Forms.Label coachIDLabel2;
+            System.Windows.Forms.Label fitnessClubIDLabel1;
+            System.Windows.Forms.Label staffIDLabel2;
+            System.Windows.Forms.Label servicesIDLabel;
+            System.Windows.Forms.Label dateLabel;
+            System.Windows.Forms.Label timeLabel;
+            System.Windows.Forms.Label label9;
+            System.Windows.Forms.Label label10;
+            System.Windows.Forms.Label label19;
+            System.Windows.Forms.Label label20;
+            System.Windows.Forms.Label label21;
+            System.Windows.Forms.Label label22;
+            System.Windows.Forms.Label label23;
+            System.Windows.Forms.Label label24;
+            System.Windows.Forms.Label paymentIDLabel;
+            System.Windows.Forms.Label paymentPaidLabel;
+            System.Windows.Forms.Label label12;
+            System.Windows.Forms.Label label11;
+            System.Windows.Forms.Label userIDLabel;
+            System.Windows.Forms.Label userNameLabel;
+            System.Windows.Forms.Label userLoginLabel;
+            System.Windows.Forms.Label userPasswordLabel;
+            System.Windows.Forms.Label label26;
+            System.Windows.Forms.Label label27;
+            System.Windows.Forms.Label label28;
+            System.Windows.Forms.Label label14;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fitness_Club));
             this.First_Lvl_LayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.Status_DB = new System.Windows.Forms.Panel();
@@ -65,7 +113,7 @@
             this.About_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DB_Pages = new System.Windows.Forms.TabControl();
             this.ClientPage = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.Client_tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.Client_edit_panel = new System.Windows.Forms.TabControl();
             this.Client_update_panel = new System.Windows.Forms.TabPage();
             this.Client_Update_tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
@@ -76,7 +124,6 @@
             this.ClientName_Update_ComboBox = new System.Windows.Forms.ComboBox();
             this.Client_Update_Button = new System.Windows.Forms.Button();
             this.Telephone_Update_Must_Label = new System.Windows.Forms.Label();
-            this.ID_Update_Must_Label = new System.Windows.Forms.Label();
             this.Name_Update_Must_Label = new System.Windows.Forms.Label();
             this.Passport_Update_Must_Label = new System.Windows.Forms.Label();
             this.ClientID_Update_comboBox = new System.Windows.Forms.ComboBox();
@@ -119,12 +166,12 @@
             this.Coach_Update_Button = new System.Windows.Forms.Button();
             this.CoachTelephone_Update_Must_Label = new System.Windows.Forms.Label();
             this.CoachID_Update_ComboBox = new System.Windows.Forms.ComboBox();
+            this.coachBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.CoachName_Update_ComboBox = new System.Windows.Forms.ComboBox();
             this.CoachPassport_Update_MaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.CoachTelephone_Update_MaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.CoachAddress_Update_ComboBox = new System.Windows.Forms.ComboBox();
             this.CoachEmail_Update_ComboBox = new System.Windows.Forms.ComboBox();
-            this.CoachID_Update_Must_Label = new System.Windows.Forms.Label();
             this.CoachName_Update_Must_Label = new System.Windows.Forms.Label();
             this.CoachPassport_Update_Must_Label = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -142,7 +189,6 @@
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.Coach_Delete_Button = new System.Windows.Forms.Button();
             this.CoachID_Delete_ComboBox = new System.Windows.Forms.ComboBox();
-            this.coachBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Coach_dataGridView = new System.Windows.Forms.DataGridView();
             this.coachIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.coachNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -161,21 +207,27 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Staff_Update_tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.StaffID_Update_ComboBox = new System.Windows.Forms.ComboBox();
+            this.staffBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.StaffPosition_Update_ComboBox = new System.Windows.Forms.ComboBox();
+            this.Staff_Update_Button = new System.Windows.Forms.Button();
+            this.StaffName_Update_Must_Label = new System.Windows.Forms.Label();
+            this.StaffName_Update_ComboBox = new System.Windows.Forms.ComboBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Staff_Add_tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.Staff_Add_Button = new System.Windows.Forms.Button();
+            this.StaffName_Add_Must_Label = new System.Windows.Forms.Label();
+            this.StaffPosition_Add_ComboBox = new System.Windows.Forms.ComboBox();
+            this.StaffName_Add_TexBox = new System.Windows.Forms.TextBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.Staff_Delete_tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.Staff_Delete_Button = new System.Windows.Forms.Button();
+            this.StaffID_Delete_ComboBox = new System.Windows.Forms.ComboBox();
             this.Staff_dataGridView = new System.Windows.Forms.DataGridView();
             this.staffIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.staffNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.staffPositionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.staffBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Staff_toolStrip = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.Staff_Search_toolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
@@ -189,11 +241,7 @@
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.button7 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
             this.button9 = new System.Windows.Forms.Button();
@@ -214,13 +262,7 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
-            this.button11 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
             this.tabPage12 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel26 = new System.Windows.Forms.TableLayoutPanel();
             this.button12 = new System.Windows.Forms.Button();
@@ -242,11 +284,7 @@
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.button13 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
             this.tabPage14 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel27 = new System.Windows.Forms.TableLayoutPanel();
-            this.button14 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
             this.tabPage15 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel28 = new System.Windows.Forms.TableLayoutPanel();
             this.button15 = new System.Windows.Forms.Button();
@@ -273,11 +311,7 @@
             this.tabPage16 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.button16 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
             this.tabPage17 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel29 = new System.Windows.Forms.TableLayoutPanel();
-            this.button17 = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
             this.tabPage18 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel30 = new System.Windows.Forms.TableLayoutPanel();
             this.button18 = new System.Windows.Forms.Button();
@@ -300,9 +334,6 @@
             this.button19 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.Users_add_panel = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel31 = new System.Windows.Forms.TableLayoutPanel();
-            this.button20 = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
             this.Users_delete_panel = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel32 = new System.Windows.Forms.TableLayoutPanel();
             this.button21 = new System.Windows.Forms.Button();
@@ -329,6 +360,63 @@
             this.staffTableAdapter = new FitnessClub.FitnessClubDataSetTableAdapters.StaffTableAdapter();
             this.coachTableAdapter = new FitnessClub.FitnessClubDataSetTableAdapters.CoachTableAdapter();
             this.tableAdapterManager = new FitnessClub.FitnessClubDataSetTableAdapters.TableAdapterManager();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.servicesPraceTextBox = new System.Windows.Forms.TextBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.comboBox15 = new System.Windows.Forms.ComboBox();
+            this.dateDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.timeDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.comboBox17 = new System.Windows.Forms.ComboBox();
+            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.comboBox20 = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox21 = new System.Windows.Forms.ComboBox();
+            this.comboBox16 = new System.Windows.Forms.ComboBox();
+            this.comboBox22 = new System.Windows.Forms.ComboBox();
+            this.comboBox23 = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBox24 = new System.Windows.Forms.ComboBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.comboBox25 = new System.Windows.Forms.ComboBox();
+            this.comboBox26 = new System.Windows.Forms.ComboBox();
+            this.comboBox27 = new System.Windows.Forms.ComboBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBox29 = new System.Windows.Forms.ComboBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.comboBox28 = new System.Windows.Forms.ComboBox();
             СlientID_Add_Label = new System.Windows.Forms.Label();
             СlientPassport_Add_Label = new System.Windows.Forms.Label();
             СlientTelephone_Add_Label = new System.Windows.Forms.Label();
@@ -353,13 +441,61 @@
             coachAddressLabel1 = new System.Windows.Forms.Label();
             coachEmailLabel1 = new System.Windows.Forms.Label();
             coachIDLabel1 = new System.Windows.Forms.Label();
+            staffIDLabel = new System.Windows.Forms.Label();
+            staffNameLabel = new System.Windows.Forms.Label();
+            staffPositionLabel = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            staffIDLabel1 = new System.Windows.Forms.Label();
+            fitnessClubIDLabel = new System.Windows.Forms.Label();
+            fitnessClubHallLabel = new System.Windows.Forms.Label();
+            fitnessClubAddressLabel = new System.Windows.Forms.Label();
+            fitnessClubTelephoneLabel = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label7 = new System.Windows.Forms.Label();
+            label15 = new System.Windows.Forms.Label();
+            label16 = new System.Windows.Forms.Label();
+            label17 = new System.Windows.Forms.Label();
+            label18 = new System.Windows.Forms.Label();
+            label8 = new System.Windows.Forms.Label();
+            documentIDLabel = new System.Windows.Forms.Label();
+            clientIDLabel = new System.Windows.Forms.Label();
+            coachIDLabel2 = new System.Windows.Forms.Label();
+            fitnessClubIDLabel1 = new System.Windows.Forms.Label();
+            staffIDLabel2 = new System.Windows.Forms.Label();
+            servicesIDLabel = new System.Windows.Forms.Label();
+            dateLabel = new System.Windows.Forms.Label();
+            timeLabel = new System.Windows.Forms.Label();
+            label9 = new System.Windows.Forms.Label();
+            label10 = new System.Windows.Forms.Label();
+            label19 = new System.Windows.Forms.Label();
+            label20 = new System.Windows.Forms.Label();
+            label21 = new System.Windows.Forms.Label();
+            label22 = new System.Windows.Forms.Label();
+            label23 = new System.Windows.Forms.Label();
+            label24 = new System.Windows.Forms.Label();
+            paymentIDLabel = new System.Windows.Forms.Label();
+            paymentPaidLabel = new System.Windows.Forms.Label();
+            label12 = new System.Windows.Forms.Label();
+            label11 = new System.Windows.Forms.Label();
+            userIDLabel = new System.Windows.Forms.Label();
+            userNameLabel = new System.Windows.Forms.Label();
+            userLoginLabel = new System.Windows.Forms.Label();
+            userPasswordLabel = new System.Windows.Forms.Label();
+            label26 = new System.Windows.Forms.Label();
+            label27 = new System.Windows.Forms.Label();
+            label28 = new System.Windows.Forms.Label();
+            label14 = new System.Windows.Forms.Label();
             this.First_Lvl_LayoutPanel.SuspendLayout();
             this.Status_DB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Status_pictureBox)).BeginInit();
             this.Toolbar.SuspendLayout();
             this.DB_Pages.SuspendLayout();
             this.ClientPage.SuspendLayout();
-            this.tableLayoutPanel8.SuspendLayout();
+            this.Client_tableLayoutPanel.SuspendLayout();
             this.Client_edit_panel.SuspendLayout();
             this.Client_update_panel.SuspendLayout();
             this.Client_Update_tableLayoutPanel.SuspendLayout();
@@ -376,24 +512,24 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.Coach_Update_tableLayoutPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.Coach_Add_tableLayoutPanel.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Coach_dataGridView)).BeginInit();
             this.Coach_toolStrip.SuspendLayout();
             this.StaffPage.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.tableLayoutPanel11.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tableLayoutPanel18.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.tableLayoutPanel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Staff_dataGridView)).BeginInit();
+            this.Staff_Update_tableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            this.Staff_Add_tableLayoutPanel.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.Staff_Delete_tableLayoutPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Staff_dataGridView)).BeginInit();
             this.Staff_toolStrip.SuspendLayout();
             this.FitnessClubPage.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -401,7 +537,6 @@
             this.tabPage7.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
             this.tabPage8.SuspendLayout();
-            this.tableLayoutPanel20.SuspendLayout();
             this.tabPage9.SuspendLayout();
             this.tableLayoutPanel21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FitnessClub_dataGridView)).BeginInit();
@@ -411,9 +546,7 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.tabControl4.SuspendLayout();
             this.tabPage10.SuspendLayout();
-            this.tableLayoutPanel13.SuspendLayout();
             this.tabPage11.SuspendLayout();
-            this.tableLayoutPanel22.SuspendLayout();
             this.tabPage12.SuspendLayout();
             this.tableLayoutPanel26.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Services_dataGridView)).BeginInit();
@@ -425,7 +558,6 @@
             this.tabPage13.SuspendLayout();
             this.tableLayoutPanel14.SuspendLayout();
             this.tabPage14.SuspendLayout();
-            this.tableLayoutPanel27.SuspendLayout();
             this.tabPage15.SuspendLayout();
             this.tableLayoutPanel28.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Documents_dataGridView)).BeginInit();
@@ -437,7 +569,6 @@
             this.tabPage16.SuspendLayout();
             this.tableLayoutPanel15.SuspendLayout();
             this.tabPage17.SuspendLayout();
-            this.tableLayoutPanel29.SuspendLayout();
             this.tabPage18.SuspendLayout();
             this.tableLayoutPanel30.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Payment_dataGridView)).BeginInit();
@@ -449,12 +580,17 @@
             this.Users_update_panel.SuspendLayout();
             this.tableLayoutPanel16.SuspendLayout();
             this.Users_add_panel.SuspendLayout();
-            this.tableLayoutPanel31.SuspendLayout();
             this.Users_delete_panel.SuspendLayout();
             this.tableLayoutPanel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Users_dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             this.Users_toolStrip.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
+            this.tableLayoutPanel10.SuspendLayout();
+            this.tableLayoutPanel11.SuspendLayout();
+            this.tableLayoutPanel13.SuspendLayout();
+            this.tableLayoutPanel18.SuspendLayout();
+            this.tableLayoutPanel19.SuspendLayout();
             this.SuspendLayout();
             // 
             // СlientID_Add_Label
@@ -721,6 +857,72 @@
             coachIDLabel1.TabIndex = 11;
             coachIDLabel1.Text = "Тренер ФИО:";
             // 
+            // staffIDLabel
+            // 
+            staffIDLabel.AutoSize = true;
+            staffIDLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            staffIDLabel.Location = new System.Drawing.Point(8, 5);
+            staffIDLabel.Name = "staffIDLabel";
+            staffIDLabel.Padding = new System.Windows.Forms.Padding(5);
+            staffIDLabel.Size = new System.Drawing.Size(184, 47);
+            staffIDLabel.TabIndex = 9;
+            staffIDLabel.Text = "Персонал ID:";
+            // 
+            // staffNameLabel
+            // 
+            staffNameLabel.AutoSize = true;
+            staffNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            staffNameLabel.Location = new System.Drawing.Point(8, 52);
+            staffNameLabel.Name = "staffNameLabel";
+            staffNameLabel.Padding = new System.Windows.Forms.Padding(5);
+            staffNameLabel.Size = new System.Drawing.Size(184, 47);
+            staffNameLabel.TabIndex = 11;
+            staffNameLabel.Text = "ФИО:";
+            // 
+            // staffPositionLabel
+            // 
+            staffPositionLabel.AutoSize = true;
+            staffPositionLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            staffPositionLabel.Location = new System.Drawing.Point(8, 99);
+            staffPositionLabel.Name = "staffPositionLabel";
+            staffPositionLabel.Padding = new System.Windows.Forms.Padding(5);
+            staffPositionLabel.Size = new System.Drawing.Size(184, 47);
+            staffPositionLabel.TabIndex = 13;
+            staffPositionLabel.Text = "Должность:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            label1.Location = new System.Drawing.Point(8, 5);
+            label1.Name = "label1";
+            label1.Padding = new System.Windows.Forms.Padding(5);
+            label1.Size = new System.Drawing.Size(184, 47);
+            label1.TabIndex = 32;
+            label1.Text = "ФИО:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            label2.Location = new System.Drawing.Point(8, 52);
+            label2.Name = "label2";
+            label2.Padding = new System.Windows.Forms.Padding(5);
+            label2.Size = new System.Drawing.Size(184, 47);
+            label2.TabIndex = 33;
+            label2.Text = "Должность:";
+            // 
+            // staffIDLabel1
+            // 
+            staffIDLabel1.AutoSize = true;
+            staffIDLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            staffIDLabel1.Location = new System.Drawing.Point(8, 5);
+            staffIDLabel1.Name = "staffIDLabel1";
+            staffIDLabel1.Padding = new System.Windows.Forms.Padding(5);
+            staffIDLabel1.Size = new System.Drawing.Size(184, 47);
+            staffIDLabel1.TabIndex = 12;
+            staffIDLabel1.Text = "Персонал ФИО:";
+            // 
             // First_Lvl_LayoutPanel
             // 
             this.First_Lvl_LayoutPanel.ColumnCount = 1;
@@ -812,6 +1014,7 @@
             this.About_ToolStripMenuItem.Name = "About_ToolStripMenuItem";
             this.About_ToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
             this.About_ToolStripMenuItem.Text = "О программе";
+            this.About_ToolStripMenuItem.Click += new System.EventHandler(this.About_ToolStripMenuItem_Click);
             // 
             // DB_Pages
             // 
@@ -832,7 +1035,7 @@
             // 
             // ClientPage
             // 
-            this.ClientPage.Controls.Add(this.tableLayoutPanel8);
+            this.ClientPage.Controls.Add(this.Client_tableLayoutPanel);
             this.ClientPage.Controls.Add(this.Clients_toolStrip);
             this.ClientPage.Cursor = System.Windows.Forms.Cursors.Default;
             this.ClientPage.Location = new System.Drawing.Point(4, 25);
@@ -843,20 +1046,20 @@
             this.ClientPage.Text = "Клиенты";
             this.ClientPage.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel8
+            // Client_tableLayoutPanel
             // 
-            this.tableLayoutPanel8.ColumnCount = 1;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.Controls.Add(this.Client_edit_panel, 0, 1);
-            this.tableLayoutPanel8.Controls.Add(this.Client_dataGridView, 0, 0);
-            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 30);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 2;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 280F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(1386, 587);
-            this.tableLayoutPanel8.TabIndex = 2;
+            this.Client_tableLayoutPanel.ColumnCount = 1;
+            this.Client_tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.Client_tableLayoutPanel.Controls.Add(this.Client_edit_panel, 0, 1);
+            this.Client_tableLayoutPanel.Controls.Add(this.Client_dataGridView, 0, 0);
+            this.Client_tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Client_tableLayoutPanel.Location = new System.Drawing.Point(3, 30);
+            this.Client_tableLayoutPanel.Name = "Client_tableLayoutPanel";
+            this.Client_tableLayoutPanel.RowCount = 2;
+            this.Client_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.Client_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 280F));
+            this.Client_tableLayoutPanel.Size = new System.Drawing.Size(1386, 587);
+            this.Client_tableLayoutPanel.TabIndex = 2;
             // 
             // Client_edit_panel
             // 
@@ -864,7 +1067,7 @@
             this.Client_edit_panel.Controls.Add(this.Client_add_panel);
             this.Client_edit_panel.Controls.Add(this.Client_delete_panel);
             this.Client_edit_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Client_edit_panel.Location = new System.Drawing.Point(3, 310);
+            this.Client_edit_panel.Location = new System.Drawing.Point(3, 306);
             this.Client_edit_panel.MinimumSize = new System.Drawing.Size(1066, 253);
             this.Client_edit_panel.Name = "Client_edit_panel";
             this.Client_edit_panel.SelectedIndex = 0;
@@ -899,7 +1102,6 @@
             this.Client_Update_tableLayoutPanel.Controls.Add(this.ClientName_Update_ComboBox, 1, 1);
             this.Client_Update_tableLayoutPanel.Controls.Add(this.Client_Update_Button, 4, 4);
             this.Client_Update_tableLayoutPanel.Controls.Add(this.Telephone_Update_Must_Label, 5, 0);
-            this.Client_Update_tableLayoutPanel.Controls.Add(this.ID_Update_Must_Label, 2, 0);
             this.Client_Update_tableLayoutPanel.Controls.Add(this.Name_Update_Must_Label, 2, 1);
             this.Client_Update_tableLayoutPanel.Controls.Add(this.Passport_Update_Must_Label, 2, 2);
             this.Client_Update_tableLayoutPanel.Controls.Add(СlientID_Update_Label, 0, 0);
@@ -998,19 +1200,6 @@
             this.Telephone_Update_Must_Label.TabIndex = 31;
             this.Telephone_Update_Must_Label.Text = "*Обязательно для заполнение";
             this.Telephone_Update_Must_Label.Visible = false;
-            // 
-            // ID_Update_Must_Label
-            // 
-            this.ID_Update_Must_Label.AutoSize = true;
-            this.ID_Update_Must_Label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ID_Update_Must_Label.ForeColor = System.Drawing.Color.Red;
-            this.ID_Update_Must_Label.Location = new System.Drawing.Point(388, 5);
-            this.ID_Update_Must_Label.Name = "ID_Update_Must_Label";
-            this.ID_Update_Must_Label.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.ID_Update_Must_Label.Size = new System.Drawing.Size(224, 47);
-            this.ID_Update_Must_Label.TabIndex = 32;
-            this.ID_Update_Must_Label.Text = "*Обязательно для заполнение";
-            this.ID_Update_Must_Label.Visible = false;
             // 
             // Name_Update_Must_Label
             // 
@@ -1290,7 +1479,7 @@
             this.Client_dataGridView.ReadOnly = true;
             this.Client_dataGridView.RowHeadersWidth = 51;
             this.Client_dataGridView.RowTemplate.Height = 24;
-            this.Client_dataGridView.Size = new System.Drawing.Size(1380, 301);
+            this.Client_dataGridView.Size = new System.Drawing.Size(1380, 297);
             this.Client_dataGridView.TabIndex = 0;
             // 
             // clientIDDataGridViewTextBoxColumn
@@ -1495,7 +1684,6 @@
             this.Coach_Update_tableLayoutPanel.Controls.Add(this.CoachTelephone_Update_MaskedTextBox, 4, 0);
             this.Coach_Update_tableLayoutPanel.Controls.Add(this.CoachAddress_Update_ComboBox, 4, 1);
             this.Coach_Update_tableLayoutPanel.Controls.Add(this.CoachEmail_Update_ComboBox, 4, 2);
-            this.Coach_Update_tableLayoutPanel.Controls.Add(this.CoachID_Update_Must_Label, 2, 0);
             this.Coach_Update_tableLayoutPanel.Controls.Add(this.CoachName_Update_Must_Label, 2, 1);
             this.Coach_Update_tableLayoutPanel.Controls.Add(this.CoachPassport_Update_Must_Label, 2, 2);
             this.Coach_Update_tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Left;
@@ -1548,6 +1736,11 @@
             this.CoachID_Update_ComboBox.Name = "CoachID_Update_ComboBox";
             this.CoachID_Update_ComboBox.Size = new System.Drawing.Size(184, 24);
             this.CoachID_Update_ComboBox.TabIndex = 32;
+            // 
+            // coachBindingSource
+            // 
+            this.coachBindingSource.DataMember = "Coach";
+            this.coachBindingSource.DataSource = this.fitnessClubDataSet;
             // 
             // CoachName_Update_ComboBox
             // 
@@ -1605,19 +1798,6 @@
             this.CoachEmail_Update_ComboBox.Size = new System.Drawing.Size(184, 24);
             this.CoachEmail_Update_ComboBox.TabIndex = 39;
             this.CoachEmail_Update_ComboBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CoachEmail_Update_ComboBox_KeyPress);
-            // 
-            // CoachID_Update_Must_Label
-            // 
-            this.CoachID_Update_Must_Label.AutoSize = true;
-            this.CoachID_Update_Must_Label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CoachID_Update_Must_Label.ForeColor = System.Drawing.Color.Red;
-            this.CoachID_Update_Must_Label.Location = new System.Drawing.Point(388, 5);
-            this.CoachID_Update_Must_Label.Name = "CoachID_Update_Must_Label";
-            this.CoachID_Update_Must_Label.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.CoachID_Update_Must_Label.Size = new System.Drawing.Size(224, 47);
-            this.CoachID_Update_Must_Label.TabIndex = 40;
-            this.CoachID_Update_Must_Label.Text = "*Обязательно для заполнение";
-            this.CoachID_Update_Must_Label.Visible = false;
             // 
             // CoachName_Update_Must_Label
             // 
@@ -1845,11 +2025,6 @@
             this.CoachID_Delete_ComboBox.TabIndex = 12;
             this.CoachID_Delete_ComboBox.ValueMember = "CoachID";
             // 
-            // coachBindingSource
-            // 
-            this.coachBindingSource.DataMember = "Coach";
-            this.coachBindingSource.DataSource = this.fitnessClubDataSet;
-            // 
             // Coach_dataGridView
             // 
             this.Coach_dataGridView.AllowUserToAddRows = false;
@@ -2041,7 +2216,7 @@
             // 
             this.tabPage4.AutoScroll = true;
             this.tabPage4.BackColor = System.Drawing.Color.Gainsboro;
-            this.tabPage4.Controls.Add(this.tableLayoutPanel11);
+            this.tabPage4.Controls.Add(this.Staff_Update_tableLayoutPanel);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -2049,58 +2224,102 @@
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "Обновить данные";
             // 
-            // tableLayoutPanel11
+            // Staff_Update_tableLayoutPanel
             // 
-            this.tableLayoutPanel11.AutoSize = true;
-            this.tableLayoutPanel11.ColumnCount = 6;
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel11.Controls.Add(this.button4, 4, 4);
-            this.tableLayoutPanel11.Controls.Add(this.label3, 5, 0);
-            this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.Padding = new System.Windows.Forms.Padding(5);
-            this.tableLayoutPanel11.RowCount = 5;
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(1184, 239);
-            this.tableLayoutPanel11.TabIndex = 9;
+            this.Staff_Update_tableLayoutPanel.AutoSize = true;
+            this.Staff_Update_tableLayoutPanel.ColumnCount = 3;
+            this.Staff_Update_tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.Staff_Update_tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.Staff_Update_tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
+            this.Staff_Update_tableLayoutPanel.Controls.Add(staffIDLabel, 0, 0);
+            this.Staff_Update_tableLayoutPanel.Controls.Add(staffNameLabel, 0, 1);
+            this.Staff_Update_tableLayoutPanel.Controls.Add(staffPositionLabel, 0, 2);
+            this.Staff_Update_tableLayoutPanel.Controls.Add(this.StaffID_Update_ComboBox, 1, 0);
+            this.Staff_Update_tableLayoutPanel.Controls.Add(this.StaffPosition_Update_ComboBox, 1, 2);
+            this.Staff_Update_tableLayoutPanel.Controls.Add(this.Staff_Update_Button, 1, 4);
+            this.Staff_Update_tableLayoutPanel.Controls.Add(this.StaffName_Update_Must_Label, 2, 1);
+            this.Staff_Update_tableLayoutPanel.Controls.Add(this.StaffName_Update_ComboBox, 1, 1);
+            this.Staff_Update_tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Staff_Update_tableLayoutPanel.Location = new System.Drawing.Point(3, 3);
+            this.Staff_Update_tableLayoutPanel.Name = "Staff_Update_tableLayoutPanel";
+            this.Staff_Update_tableLayoutPanel.Padding = new System.Windows.Forms.Padding(5);
+            this.Staff_Update_tableLayoutPanel.RowCount = 5;
+            this.Staff_Update_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.Staff_Update_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.Staff_Update_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.Staff_Update_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.Staff_Update_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.Staff_Update_tableLayoutPanel.Size = new System.Drawing.Size(620, 239);
+            this.Staff_Update_tableLayoutPanel.TabIndex = 9;
+            this.Staff_Update_tableLayoutPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Staff_Update_tableLayoutPanel_MouseMove);
             // 
-            // button4
+            // StaffID_Update_ComboBox
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Location = new System.Drawing.Point(778, 196);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(184, 35);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Обновить";
-            this.button4.UseVisualStyleBackColor = true;
+            this.StaffID_Update_ComboBox.DataSource = this.staffBindingSource;
+            this.StaffID_Update_ComboBox.DisplayMember = "StaffID";
+            this.StaffID_Update_ComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StaffID_Update_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.StaffID_Update_ComboBox.FormattingEnabled = true;
+            this.StaffID_Update_ComboBox.Location = new System.Drawing.Point(198, 8);
+            this.StaffID_Update_ComboBox.Name = "StaffID_Update_ComboBox";
+            this.StaffID_Update_ComboBox.Size = new System.Drawing.Size(184, 24);
+            this.StaffID_Update_ComboBox.TabIndex = 32;
             // 
-            // label3
+            // staffBindingSource
             // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(968, 5);
-            this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.label3.Size = new System.Drawing.Size(208, 47);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "*Обязательно для заполнение";
-            this.label3.Visible = false;
+            this.staffBindingSource.DataMember = "Staff";
+            this.staffBindingSource.DataSource = this.fitnessClubDataSet;
+            // 
+            // StaffPosition_Update_ComboBox
+            // 
+            this.StaffPosition_Update_ComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StaffPosition_Update_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.StaffPosition_Update_ComboBox.FormattingEnabled = true;
+            this.StaffPosition_Update_ComboBox.Location = new System.Drawing.Point(198, 102);
+            this.StaffPosition_Update_ComboBox.Name = "StaffPosition_Update_ComboBox";
+            this.StaffPosition_Update_ComboBox.Size = new System.Drawing.Size(184, 24);
+            this.StaffPosition_Update_ComboBox.TabIndex = 34;
+            // 
+            // Staff_Update_Button
+            // 
+            this.Staff_Update_Button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Staff_Update_Button.Location = new System.Drawing.Point(198, 196);
+            this.Staff_Update_Button.Name = "Staff_Update_Button";
+            this.Staff_Update_Button.Size = new System.Drawing.Size(184, 35);
+            this.Staff_Update_Button.TabIndex = 11;
+            this.Staff_Update_Button.Text = "Обновить";
+            this.Staff_Update_Button.UseVisualStyleBackColor = true;
+            this.Staff_Update_Button.Click += new System.EventHandler(this.Staff_Update_Button_Click);
+            // 
+            // StaffName_Update_Must_Label
+            // 
+            this.StaffName_Update_Must_Label.AutoSize = true;
+            this.StaffName_Update_Must_Label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StaffName_Update_Must_Label.ForeColor = System.Drawing.Color.Red;
+            this.StaffName_Update_Must_Label.Location = new System.Drawing.Point(388, 52);
+            this.StaffName_Update_Must_Label.Name = "StaffName_Update_Must_Label";
+            this.StaffName_Update_Must_Label.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.StaffName_Update_Must_Label.Size = new System.Drawing.Size(224, 47);
+            this.StaffName_Update_Must_Label.TabIndex = 31;
+            this.StaffName_Update_Must_Label.Text = "*Обязательно для заполнение";
+            this.StaffName_Update_Must_Label.Visible = false;
+            // 
+            // StaffName_Update_ComboBox
+            // 
+            this.StaffName_Update_ComboBox.DataSource = this.staffBindingSource;
+            this.StaffName_Update_ComboBox.DisplayMember = "StaffName";
+            this.StaffName_Update_ComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StaffName_Update_ComboBox.FormattingEnabled = true;
+            this.StaffName_Update_ComboBox.Location = new System.Drawing.Point(198, 55);
+            this.StaffName_Update_ComboBox.Name = "StaffName_Update_ComboBox";
+            this.StaffName_Update_ComboBox.Size = new System.Drawing.Size(184, 24);
+            this.StaffName_Update_ComboBox.TabIndex = 35;
+            this.StaffName_Update_ComboBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.StaffName_Update_ComboBox_KeyPress);
             // 
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.Gainsboro;
-            this.tabPage5.Controls.Add(this.tableLayoutPanel18);
+            this.tabPage5.Controls.Add(this.Staff_Add_tableLayoutPanel);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -2108,57 +2327,79 @@
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Добавить данные";
             // 
-            // tableLayoutPanel18
+            // Staff_Add_tableLayoutPanel
             // 
-            this.tableLayoutPanel18.AutoSize = true;
-            this.tableLayoutPanel18.ColumnCount = 5;
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel18.Controls.Add(this.button5, 4, 4);
-            this.tableLayoutPanel18.Controls.Add(this.label4, 2, 0);
-            this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel18.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel18.Name = "tableLayoutPanel18";
-            this.tableLayoutPanel18.Padding = new System.Windows.Forms.Padding(5);
-            this.tableLayoutPanel18.RowCount = 5;
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel18.Size = new System.Drawing.Size(970, 239);
-            this.tableLayoutPanel18.TabIndex = 10;
+            this.Staff_Add_tableLayoutPanel.AutoSize = true;
+            this.Staff_Add_tableLayoutPanel.ColumnCount = 3;
+            this.Staff_Add_tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.Staff_Add_tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.Staff_Add_tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
+            this.Staff_Add_tableLayoutPanel.Controls.Add(this.Staff_Add_Button, 1, 4);
+            this.Staff_Add_tableLayoutPanel.Controls.Add(this.StaffName_Add_Must_Label, 2, 0);
+            this.Staff_Add_tableLayoutPanel.Controls.Add(label1, 0, 0);
+            this.Staff_Add_tableLayoutPanel.Controls.Add(label2, 0, 1);
+            this.Staff_Add_tableLayoutPanel.Controls.Add(this.StaffPosition_Add_ComboBox, 1, 1);
+            this.Staff_Add_tableLayoutPanel.Controls.Add(this.StaffName_Add_TexBox, 1, 0);
+            this.Staff_Add_tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Staff_Add_tableLayoutPanel.Location = new System.Drawing.Point(3, 3);
+            this.Staff_Add_tableLayoutPanel.Name = "Staff_Add_tableLayoutPanel";
+            this.Staff_Add_tableLayoutPanel.Padding = new System.Windows.Forms.Padding(5);
+            this.Staff_Add_tableLayoutPanel.RowCount = 5;
+            this.Staff_Add_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.Staff_Add_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.Staff_Add_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.Staff_Add_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.Staff_Add_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.Staff_Add_tableLayoutPanel.Size = new System.Drawing.Size(620, 239);
+            this.Staff_Add_tableLayoutPanel.TabIndex = 10;
+            this.Staff_Add_tableLayoutPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Staff_Add_tableLayoutPanel_MouseMove);
             // 
-            // button5
+            // Staff_Add_Button
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Location = new System.Drawing.Point(778, 196);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(184, 35);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "Добавить";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Staff_Add_Button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Staff_Add_Button.Location = new System.Drawing.Point(198, 196);
+            this.Staff_Add_Button.Name = "Staff_Add_Button";
+            this.Staff_Add_Button.Size = new System.Drawing.Size(184, 35);
+            this.Staff_Add_Button.TabIndex = 11;
+            this.Staff_Add_Button.Text = "Добавить";
+            this.Staff_Add_Button.UseVisualStyleBackColor = true;
+            this.Staff_Add_Button.Click += new System.EventHandler(this.Staff_Add_Button_Click);
             // 
-            // label4
+            // StaffName_Add_Must_Label
             // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(388, 5);
-            this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.label4.Size = new System.Drawing.Size(224, 47);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "*Обязательно для заполнение";
-            this.label4.Visible = false;
+            this.StaffName_Add_Must_Label.AutoSize = true;
+            this.StaffName_Add_Must_Label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StaffName_Add_Must_Label.ForeColor = System.Drawing.Color.Red;
+            this.StaffName_Add_Must_Label.Location = new System.Drawing.Point(388, 5);
+            this.StaffName_Add_Must_Label.Name = "StaffName_Add_Must_Label";
+            this.StaffName_Add_Must_Label.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.StaffName_Add_Must_Label.Size = new System.Drawing.Size(224, 47);
+            this.StaffName_Add_Must_Label.TabIndex = 31;
+            this.StaffName_Add_Must_Label.Text = "*Обязательно для заполнение";
+            this.StaffName_Add_Must_Label.Visible = false;
+            // 
+            // StaffPosition_Add_ComboBox
+            // 
+            this.StaffPosition_Add_ComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StaffPosition_Add_ComboBox.FormattingEnabled = true;
+            this.StaffPosition_Add_ComboBox.Location = new System.Drawing.Point(198, 55);
+            this.StaffPosition_Add_ComboBox.Name = "StaffPosition_Add_ComboBox";
+            this.StaffPosition_Add_ComboBox.Size = new System.Drawing.Size(184, 24);
+            this.StaffPosition_Add_ComboBox.TabIndex = 37;
+            // 
+            // StaffName_Add_TexBox
+            // 
+            this.StaffName_Add_TexBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StaffName_Add_TexBox.Location = new System.Drawing.Point(198, 8);
+            this.StaffName_Add_TexBox.Name = "StaffName_Add_TexBox";
+            this.StaffName_Add_TexBox.Size = new System.Drawing.Size(184, 22);
+            this.StaffName_Add_TexBox.TabIndex = 38;
+            this.StaffName_Add_TexBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.StaffName_Add_TexBox_KeyPress);
             // 
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.Gainsboro;
-            this.tabPage6.Controls.Add(this.tableLayoutPanel19);
+            this.tabPage6.Controls.Add(this.Staff_Delete_tableLayoutPanel);
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -2166,34 +2407,53 @@
             this.tabPage6.TabIndex = 2;
             this.tabPage6.Text = "Удалить данные";
             // 
-            // tableLayoutPanel19
+            // Staff_Delete_tableLayoutPanel
             // 
-            this.tableLayoutPanel19.AutoSize = true;
-            this.tableLayoutPanel19.ColumnCount = 2;
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel19.Controls.Add(this.button6, 1, 4);
-            this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel19.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel19.Name = "tableLayoutPanel19";
-            this.tableLayoutPanel19.Padding = new System.Windows.Forms.Padding(5);
-            this.tableLayoutPanel19.RowCount = 5;
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(390, 239);
-            this.tableLayoutPanel19.TabIndex = 11;
+            this.Staff_Delete_tableLayoutPanel.AutoScroll = true;
+            this.Staff_Delete_tableLayoutPanel.AutoSize = true;
+            this.Staff_Delete_tableLayoutPanel.ColumnCount = 2;
+            this.Staff_Delete_tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.Staff_Delete_tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.Staff_Delete_tableLayoutPanel.Controls.Add(staffIDLabel1, 0, 0);
+            this.Staff_Delete_tableLayoutPanel.Controls.Add(this.Staff_Delete_Button, 1, 4);
+            this.Staff_Delete_tableLayoutPanel.Controls.Add(this.StaffID_Delete_ComboBox, 1, 0);
+            this.Staff_Delete_tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Staff_Delete_tableLayoutPanel.Location = new System.Drawing.Point(3, 3);
+            this.Staff_Delete_tableLayoutPanel.Name = "Staff_Delete_tableLayoutPanel";
+            this.Staff_Delete_tableLayoutPanel.Padding = new System.Windows.Forms.Padding(5);
+            this.Staff_Delete_tableLayoutPanel.RowCount = 5;
+            this.Staff_Delete_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.Staff_Delete_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.Staff_Delete_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.Staff_Delete_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.Staff_Delete_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.Staff_Delete_tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.Staff_Delete_tableLayoutPanel.Size = new System.Drawing.Size(390, 239);
+            this.Staff_Delete_tableLayoutPanel.TabIndex = 11;
             // 
-            // button6
+            // Staff_Delete_Button
             // 
-            this.button6.Location = new System.Drawing.Point(198, 196);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(184, 34);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Удалить";
-            this.button6.UseVisualStyleBackColor = true;
+            this.Staff_Delete_Button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Staff_Delete_Button.Location = new System.Drawing.Point(198, 196);
+            this.Staff_Delete_Button.Name = "Staff_Delete_Button";
+            this.Staff_Delete_Button.Size = new System.Drawing.Size(184, 35);
+            this.Staff_Delete_Button.TabIndex = 11;
+            this.Staff_Delete_Button.Text = "Удалить";
+            this.Staff_Delete_Button.UseVisualStyleBackColor = true;
+            this.Staff_Delete_Button.Click += new System.EventHandler(this.Staff_Delete_Button_Click);
+            // 
+            // StaffID_Delete_ComboBox
+            // 
+            this.StaffID_Delete_ComboBox.DataSource = this.staffBindingSource;
+            this.StaffID_Delete_ComboBox.DisplayMember = "StaffName";
+            this.StaffID_Delete_ComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StaffID_Delete_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.StaffID_Delete_ComboBox.FormattingEnabled = true;
+            this.StaffID_Delete_ComboBox.Location = new System.Drawing.Point(198, 8);
+            this.StaffID_Delete_ComboBox.Name = "StaffID_Delete_ComboBox";
+            this.StaffID_Delete_ComboBox.Size = new System.Drawing.Size(184, 24);
+            this.StaffID_Delete_ComboBox.TabIndex = 12;
+            this.StaffID_Delete_ComboBox.ValueMember = "StaffID";
             // 
             // Staff_dataGridView
             // 
@@ -2241,11 +2501,6 @@
             this.staffPositionDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.staffPositionDataGridViewTextBoxColumn.Name = "staffPositionDataGridViewTextBoxColumn";
             this.staffPositionDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // staffBindingSource
-            // 
-            this.staffBindingSource.DataMember = "Staff";
-            this.staffBindingSource.DataSource = this.fitnessClubDataSet;
             // 
             // Staff_toolStrip
             // 
@@ -2372,15 +2627,18 @@
             // tableLayoutPanel12
             // 
             this.tableLayoutPanel12.AutoSize = true;
-            this.tableLayoutPanel12.ColumnCount = 6;
+            this.tableLayoutPanel12.ColumnCount = 2;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel12.Controls.Add(this.button7, 4, 4);
-            this.tableLayoutPanel12.Controls.Add(this.label5, 5, 0);
+            this.tableLayoutPanel12.Controls.Add(this.comboBox7, 1, 2);
+            this.tableLayoutPanel12.Controls.Add(fitnessClubIDLabel, 0, 0);
+            this.tableLayoutPanel12.Controls.Add(fitnessClubHallLabel, 0, 1);
+            this.tableLayoutPanel12.Controls.Add(fitnessClubAddressLabel, 0, 2);
+            this.tableLayoutPanel12.Controls.Add(fitnessClubTelephoneLabel, 0, 3);
+            this.tableLayoutPanel12.Controls.Add(this.button7, 1, 4);
+            this.tableLayoutPanel12.Controls.Add(this.comboBox1, 1, 0);
+            this.tableLayoutPanel12.Controls.Add(this.comboBox2, 1, 1);
+            this.tableLayoutPanel12.Controls.Add(this.maskedTextBox2, 1, 3);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
@@ -2391,89 +2649,29 @@
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(1184, 239);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(390, 239);
             this.tableLayoutPanel12.TabIndex = 9;
             // 
             // button7
             // 
             this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.Location = new System.Drawing.Point(778, 196);
+            this.button7.Location = new System.Drawing.Point(198, 196);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(184, 35);
             this.button7.TabIndex = 11;
             this.button7.Text = "Обновить";
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(968, 5);
-            this.label5.Name = "label5";
-            this.label5.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.label5.Size = new System.Drawing.Size(208, 47);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "*Обязательно для заполнение";
-            this.label5.Visible = false;
-            // 
             // tabPage8
             // 
             this.tabPage8.BackColor = System.Drawing.Color.Gainsboro;
-            this.tabPage8.Controls.Add(this.tableLayoutPanel20);
+            this.tabPage8.Controls.Add(this.tableLayoutPanel9);
             this.tabPage8.Location = new System.Drawing.Point(4, 25);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage8.Size = new System.Drawing.Size(1372, 245);
             this.tabPage8.TabIndex = 1;
             this.tabPage8.Text = "Добавить данные";
-            // 
-            // tableLayoutPanel20
-            // 
-            this.tableLayoutPanel20.AutoSize = true;
-            this.tableLayoutPanel20.ColumnCount = 5;
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel20.Controls.Add(this.button8, 4, 4);
-            this.tableLayoutPanel20.Controls.Add(this.label6, 2, 0);
-            this.tableLayoutPanel20.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel20.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel20.Name = "tableLayoutPanel20";
-            this.tableLayoutPanel20.Padding = new System.Windows.Forms.Padding(5);
-            this.tableLayoutPanel20.RowCount = 5;
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(970, 239);
-            this.tableLayoutPanel20.TabIndex = 10;
-            // 
-            // button8
-            // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button8.Location = new System.Drawing.Point(778, 196);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(184, 35);
-            this.button8.TabIndex = 11;
-            this.button8.Text = "Добавить";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(388, 5);
-            this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.label6.Size = new System.Drawing.Size(224, 47);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "*Обязательно для заполнение";
-            this.label6.Visible = false;
             // 
             // tabPage9
             // 
@@ -2493,6 +2691,8 @@
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel21.Controls.Add(this.button9, 1, 4);
+            this.tableLayoutPanel21.Controls.Add(label3, 0, 0);
+            this.tableLayoutPanel21.Controls.Add(this.comboBox3, 1, 0);
             this.tableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel21.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
@@ -2503,6 +2703,7 @@
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel21.Size = new System.Drawing.Size(390, 239);
             this.tableLayoutPanel21.TabIndex = 11;
             // 
@@ -2691,7 +2892,7 @@
             // 
             this.tabPage10.AutoScroll = true;
             this.tabPage10.BackColor = System.Drawing.Color.Gainsboro;
-            this.tabPage10.Controls.Add(this.tableLayoutPanel13);
+            this.tabPage10.Controls.Add(this.tableLayoutPanel10);
             this.tabPage10.Location = new System.Drawing.Point(4, 25);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
@@ -2699,111 +2900,16 @@
             this.tabPage10.TabIndex = 0;
             this.tabPage10.Text = "Обновить данные";
             // 
-            // tableLayoutPanel13
-            // 
-            this.tableLayoutPanel13.AutoSize = true;
-            this.tableLayoutPanel13.ColumnCount = 6;
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel13.Controls.Add(this.button10, 4, 4);
-            this.tableLayoutPanel13.Controls.Add(this.label7, 5, 0);
-            this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
-            this.tableLayoutPanel13.Padding = new System.Windows.Forms.Padding(5);
-            this.tableLayoutPanel13.RowCount = 5;
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(1184, 239);
-            this.tableLayoutPanel13.TabIndex = 9;
-            // 
-            // button10
-            // 
-            this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button10.Location = new System.Drawing.Point(778, 196);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(184, 35);
-            this.button10.TabIndex = 11;
-            this.button10.Text = "Обновить";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(968, 5);
-            this.label7.Name = "label7";
-            this.label7.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.label7.Size = new System.Drawing.Size(208, 47);
-            this.label7.TabIndex = 31;
-            this.label7.Text = "*Обязательно для заполнение";
-            this.label7.Visible = false;
-            // 
             // tabPage11
             // 
             this.tabPage11.BackColor = System.Drawing.Color.Gainsboro;
-            this.tabPage11.Controls.Add(this.tableLayoutPanel22);
+            this.tabPage11.Controls.Add(this.tableLayoutPanel11);
             this.tabPage11.Location = new System.Drawing.Point(4, 25);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage11.Size = new System.Drawing.Size(1372, 245);
             this.tabPage11.TabIndex = 1;
             this.tabPage11.Text = "Добавить данные";
-            // 
-            // tableLayoutPanel22
-            // 
-            this.tableLayoutPanel22.AutoSize = true;
-            this.tableLayoutPanel22.ColumnCount = 5;
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel22.Controls.Add(this.button11, 4, 4);
-            this.tableLayoutPanel22.Controls.Add(this.label8, 2, 0);
-            this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel22.Name = "tableLayoutPanel22";
-            this.tableLayoutPanel22.Padding = new System.Windows.Forms.Padding(5);
-            this.tableLayoutPanel22.RowCount = 5;
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(970, 239);
-            this.tableLayoutPanel22.TabIndex = 10;
-            // 
-            // button11
-            // 
-            this.button11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button11.Location = new System.Drawing.Point(778, 196);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(184, 35);
-            this.button11.TabIndex = 11;
-            this.button11.Text = "Добавить";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(388, 5);
-            this.label8.Name = "label8";
-            this.label8.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.label8.Size = new System.Drawing.Size(224, 47);
-            this.label8.TabIndex = 31;
-            this.label8.Text = "*Обязательно для заполнение";
-            this.label8.Visible = false;
             // 
             // tabPage12
             // 
@@ -2823,6 +2929,8 @@
             this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel26.Controls.Add(this.button12, 1, 4);
+            this.tableLayoutPanel26.Controls.Add(label8, 0, 0);
+            this.tableLayoutPanel26.Controls.Add(this.comboBox9, 1, 0);
             this.tableLayoutPanel26.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel26.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel26.Name = "tableLayoutPanel26";
@@ -3022,15 +3130,29 @@
             // tableLayoutPanel14
             // 
             this.tableLayoutPanel14.AutoSize = true;
-            this.tableLayoutPanel14.ColumnCount = 6;
+            this.tableLayoutPanel14.ColumnCount = 5;
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel14.Controls.Add(timeLabel, 3, 3);
+            this.tableLayoutPanel14.Controls.Add(dateLabel, 3, 2);
+            this.tableLayoutPanel14.Controls.Add(servicesIDLabel, 3, 1);
+            this.tableLayoutPanel14.Controls.Add(staffIDLabel2, 3, 0);
+            this.tableLayoutPanel14.Controls.Add(fitnessClubIDLabel1, 0, 3);
+            this.tableLayoutPanel14.Controls.Add(coachIDLabel2, 0, 2);
+            this.tableLayoutPanel14.Controls.Add(clientIDLabel, 0, 1);
+            this.tableLayoutPanel14.Controls.Add(documentIDLabel, 0, 0);
             this.tableLayoutPanel14.Controls.Add(this.button13, 4, 4);
-            this.tableLayoutPanel14.Controls.Add(this.label9, 5, 0);
+            this.tableLayoutPanel14.Controls.Add(this.comboBox10, 1, 0);
+            this.tableLayoutPanel14.Controls.Add(this.comboBox11, 1, 1);
+            this.tableLayoutPanel14.Controls.Add(this.comboBox12, 1, 2);
+            this.tableLayoutPanel14.Controls.Add(this.comboBox13, 1, 3);
+            this.tableLayoutPanel14.Controls.Add(this.comboBox14, 4, 0);
+            this.tableLayoutPanel14.Controls.Add(this.dateDateTimePicker, 4, 2);
+            this.tableLayoutPanel14.Controls.Add(this.timeDateTimePicker, 4, 3);
+            this.tableLayoutPanel14.Controls.Add(this.comboBox15, 4, 1);
             this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel14.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
@@ -3041,7 +3163,7 @@
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(1184, 239);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(970, 239);
             this.tableLayoutPanel14.TabIndex = 9;
             // 
             // button13
@@ -3054,76 +3176,16 @@
             this.button13.Text = "Обновить";
             this.button13.UseVisualStyleBackColor = true;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(968, 5);
-            this.label9.Name = "label9";
-            this.label9.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.label9.Size = new System.Drawing.Size(208, 47);
-            this.label9.TabIndex = 31;
-            this.label9.Text = "*Обязательно для заполнение";
-            this.label9.Visible = false;
-            // 
             // tabPage14
             // 
             this.tabPage14.BackColor = System.Drawing.Color.Gainsboro;
-            this.tabPage14.Controls.Add(this.tableLayoutPanel27);
+            this.tabPage14.Controls.Add(this.tableLayoutPanel13);
             this.tabPage14.Location = new System.Drawing.Point(4, 25);
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage14.Size = new System.Drawing.Size(1372, 245);
             this.tabPage14.TabIndex = 1;
             this.tabPage14.Text = "Добавить данные";
-            // 
-            // tableLayoutPanel27
-            // 
-            this.tableLayoutPanel27.AutoSize = true;
-            this.tableLayoutPanel27.ColumnCount = 5;
-            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
-            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel27.Controls.Add(this.button14, 4, 4);
-            this.tableLayoutPanel27.Controls.Add(this.label10, 2, 0);
-            this.tableLayoutPanel27.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel27.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel27.Name = "tableLayoutPanel27";
-            this.tableLayoutPanel27.Padding = new System.Windows.Forms.Padding(5);
-            this.tableLayoutPanel27.RowCount = 5;
-            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel27.Size = new System.Drawing.Size(970, 239);
-            this.tableLayoutPanel27.TabIndex = 10;
-            // 
-            // button14
-            // 
-            this.button14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button14.Location = new System.Drawing.Point(778, 196);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(184, 35);
-            this.button14.TabIndex = 11;
-            this.button14.Text = "Добавить";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(388, 5);
-            this.label10.Name = "label10";
-            this.label10.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.label10.Size = new System.Drawing.Size(224, 47);
-            this.label10.TabIndex = 31;
-            this.label10.Text = "*Обязательно для заполнение";
-            this.label10.Visible = false;
             // 
             // tabPage15
             // 
@@ -3142,7 +3204,9 @@
             this.tableLayoutPanel28.ColumnCount = 2;
             this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel28.Controls.Add(this.comboBox16, 1, 0);
             this.tableLayoutPanel28.Controls.Add(this.button15, 1, 4);
+            this.tableLayoutPanel28.Controls.Add(label24, 0, 0);
             this.tableLayoutPanel28.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel28.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel28.Name = "tableLayoutPanel28";
@@ -3153,6 +3217,7 @@
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel28.Size = new System.Drawing.Size(390, 239);
             this.tableLayoutPanel28.TabIndex = 11;
             // 
@@ -3392,15 +3457,14 @@
             // tableLayoutPanel15
             // 
             this.tableLayoutPanel15.AutoSize = true;
-            this.tableLayoutPanel15.ColumnCount = 6;
+            this.tableLayoutPanel15.ColumnCount = 2;
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel15.Controls.Add(this.button16, 4, 4);
-            this.tableLayoutPanel15.Controls.Add(this.label11, 5, 0);
+            this.tableLayoutPanel15.Controls.Add(this.comboBox23, 1, 1);
+            this.tableLayoutPanel15.Controls.Add(paymentIDLabel, 0, 0);
+            this.tableLayoutPanel15.Controls.Add(paymentPaidLabel, 0, 1);
+            this.tableLayoutPanel15.Controls.Add(this.button16, 1, 4);
+            this.tableLayoutPanel15.Controls.Add(this.comboBox22, 1, 0);
             this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel15.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
@@ -3411,89 +3475,28 @@
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(1184, 239);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(390, 239);
             this.tableLayoutPanel15.TabIndex = 9;
             // 
             // button16
             // 
-            this.button16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button16.Location = new System.Drawing.Point(778, 196);
+            this.button16.Location = new System.Drawing.Point(198, 196);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(184, 35);
             this.button16.TabIndex = 11;
             this.button16.Text = "Обновить";
             this.button16.UseVisualStyleBackColor = true;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(968, 5);
-            this.label11.Name = "label11";
-            this.label11.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.label11.Size = new System.Drawing.Size(208, 47);
-            this.label11.TabIndex = 31;
-            this.label11.Text = "*Обязательно для заполнение";
-            this.label11.Visible = false;
-            // 
             // tabPage17
             // 
             this.tabPage17.BackColor = System.Drawing.Color.Gainsboro;
-            this.tabPage17.Controls.Add(this.tableLayoutPanel29);
+            this.tabPage17.Controls.Add(this.tableLayoutPanel18);
             this.tabPage17.Location = new System.Drawing.Point(4, 25);
             this.tabPage17.Name = "tabPage17";
             this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage17.Size = new System.Drawing.Size(1372, 245);
             this.tabPage17.TabIndex = 1;
             this.tabPage17.Text = "Добавить данные";
-            // 
-            // tableLayoutPanel29
-            // 
-            this.tableLayoutPanel29.AutoSize = true;
-            this.tableLayoutPanel29.ColumnCount = 5;
-            this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
-            this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel29.Controls.Add(this.button17, 4, 4);
-            this.tableLayoutPanel29.Controls.Add(this.label12, 2, 0);
-            this.tableLayoutPanel29.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel29.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel29.Name = "tableLayoutPanel29";
-            this.tableLayoutPanel29.Padding = new System.Windows.Forms.Padding(5);
-            this.tableLayoutPanel29.RowCount = 5;
-            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel29.Size = new System.Drawing.Size(970, 239);
-            this.tableLayoutPanel29.TabIndex = 10;
-            // 
-            // button17
-            // 
-            this.button17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button17.Location = new System.Drawing.Point(778, 196);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(184, 35);
-            this.button17.TabIndex = 11;
-            this.button17.Text = "Добавить";
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(388, 5);
-            this.label12.Name = "label12";
-            this.label12.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.label12.Size = new System.Drawing.Size(224, 47);
-            this.label12.TabIndex = 31;
-            this.label12.Text = "*Обязательно для заполнение";
-            this.label12.Visible = false;
             // 
             // tabPage18
             // 
@@ -3512,6 +3515,8 @@
             this.tableLayoutPanel30.ColumnCount = 2;
             this.tableLayoutPanel30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel30.Controls.Add(label11, 0, 0);
+            this.tableLayoutPanel30.Controls.Add(this.comboBox25, 1, 0);
             this.tableLayoutPanel30.Controls.Add(this.button18, 1, 4);
             this.tableLayoutPanel30.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel30.Location = new System.Drawing.Point(3, 3);
@@ -3523,6 +3528,7 @@
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel30.Size = new System.Drawing.Size(390, 239);
             this.tableLayoutPanel30.TabIndex = 11;
             // 
@@ -3702,15 +3708,21 @@
             // tableLayoutPanel16
             // 
             this.tableLayoutPanel16.AutoSize = true;
-            this.tableLayoutPanel16.ColumnCount = 6;
+            this.tableLayoutPanel16.ColumnCount = 3;
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel16.Controls.Add(this.button19, 4, 4);
-            this.tableLayoutPanel16.Controls.Add(this.label13, 5, 0);
+            this.tableLayoutPanel16.Controls.Add(userIDLabel, 0, 0);
+            this.tableLayoutPanel16.Controls.Add(userNameLabel, 0, 1);
+            this.tableLayoutPanel16.Controls.Add(userLoginLabel, 0, 2);
+            this.tableLayoutPanel16.Controls.Add(userPasswordLabel, 0, 3);
+            this.tableLayoutPanel16.Controls.Add(this.comboBox26, 1, 0);
+            this.tableLayoutPanel16.Controls.Add(this.comboBox27, 1, 1);
+            this.tableLayoutPanel16.Controls.Add(this.button19, 1, 4);
+            this.tableLayoutPanel16.Controls.Add(this.label13, 2, 2);
+            this.tableLayoutPanel16.Controls.Add(this.label25, 2, 3);
+            this.tableLayoutPanel16.Controls.Add(this.textBox1, 1, 2);
+            this.tableLayoutPanel16.Controls.Add(this.textBox2, 1, 3);
             this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel16.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
@@ -3721,13 +3733,13 @@
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(1184, 239);
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(620, 239);
             this.tableLayoutPanel16.TabIndex = 9;
             // 
             // button19
             // 
             this.button19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button19.Location = new System.Drawing.Point(778, 196);
+            this.button19.Location = new System.Drawing.Point(198, 196);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(184, 35);
             this.button19.TabIndex = 11;
@@ -3739,10 +3751,10 @@
             this.label13.AutoSize = true;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label13.ForeColor = System.Drawing.Color.Red;
-            this.label13.Location = new System.Drawing.Point(968, 5);
+            this.label13.Location = new System.Drawing.Point(388, 99);
             this.label13.Name = "label13";
             this.label13.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.label13.Size = new System.Drawing.Size(208, 47);
+            this.label13.Size = new System.Drawing.Size(224, 47);
             this.label13.TabIndex = 31;
             this.label13.Text = "*Обязательно для заполнение";
             this.label13.Visible = false;
@@ -3750,60 +3762,13 @@
             // Users_add_panel
             // 
             this.Users_add_panel.BackColor = System.Drawing.Color.Gainsboro;
-            this.Users_add_panel.Controls.Add(this.tableLayoutPanel31);
+            this.Users_add_panel.Controls.Add(this.tableLayoutPanel19);
             this.Users_add_panel.Location = new System.Drawing.Point(4, 25);
             this.Users_add_panel.Name = "Users_add_panel";
             this.Users_add_panel.Padding = new System.Windows.Forms.Padding(3);
             this.Users_add_panel.Size = new System.Drawing.Size(1372, 245);
             this.Users_add_panel.TabIndex = 1;
             this.Users_add_panel.Text = "Добавить данные";
-            // 
-            // tableLayoutPanel31
-            // 
-            this.tableLayoutPanel31.AutoSize = true;
-            this.tableLayoutPanel31.ColumnCount = 5;
-            this.tableLayoutPanel31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
-            this.tableLayoutPanel31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanel31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel31.Controls.Add(this.button20, 4, 4);
-            this.tableLayoutPanel31.Controls.Add(this.label14, 2, 0);
-            this.tableLayoutPanel31.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel31.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel31.Name = "tableLayoutPanel31";
-            this.tableLayoutPanel31.Padding = new System.Windows.Forms.Padding(5);
-            this.tableLayoutPanel31.RowCount = 5;
-            this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel31.Size = new System.Drawing.Size(970, 239);
-            this.tableLayoutPanel31.TabIndex = 10;
-            // 
-            // button20
-            // 
-            this.button20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button20.Location = new System.Drawing.Point(778, 196);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(184, 35);
-            this.button20.TabIndex = 11;
-            this.button20.Text = "Добавить";
-            this.button20.UseVisualStyleBackColor = true;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(388, 5);
-            this.label14.Name = "label14";
-            this.label14.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.label14.Size = new System.Drawing.Size(224, 47);
-            this.label14.TabIndex = 31;
-            this.label14.Text = "*Обязательно для заполнение";
-            this.label14.Visible = false;
             // 
             // Users_delete_panel
             // 
@@ -3822,6 +3787,8 @@
             this.tableLayoutPanel32.ColumnCount = 2;
             this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel32.Controls.Add(label14, 0, 0);
+            this.tableLayoutPanel32.Controls.Add(this.comboBox28, 1, 0);
             this.tableLayoutPanel32.Controls.Add(this.button21, 1, 4);
             this.tableLayoutPanel32.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel32.Location = new System.Drawing.Point(3, 3);
@@ -3833,14 +3800,16 @@
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel32.Size = new System.Drawing.Size(390, 239);
             this.tableLayoutPanel32.TabIndex = 11;
             // 
             // button21
             // 
+            this.button21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button21.Location = new System.Drawing.Point(198, 196);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(184, 34);
+            this.button21.Size = new System.Drawing.Size(184, 35);
             this.button21.TabIndex = 11;
             this.button21.Text = "Удалить";
             this.button21.UseVisualStyleBackColor = true;
@@ -4027,6 +3996,1118 @@
             this.tableAdapterManager.UpdateOrder = FitnessClub.FitnessClubDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = this.usersTableAdapter;
             // 
+            // fitnessClubIDLabel
+            // 
+            fitnessClubIDLabel.AutoSize = true;
+            fitnessClubIDLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            fitnessClubIDLabel.Location = new System.Drawing.Point(8, 5);
+            fitnessClubIDLabel.Name = "fitnessClubIDLabel";
+            fitnessClubIDLabel.Padding = new System.Windows.Forms.Padding(5);
+            fitnessClubIDLabel.Size = new System.Drawing.Size(184, 47);
+            fitnessClubIDLabel.TabIndex = 9;
+            fitnessClubIDLabel.Text = "Фитнес клуб ID:";
+            // 
+            // fitnessClubHallLabel
+            // 
+            fitnessClubHallLabel.AutoSize = true;
+            fitnessClubHallLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            fitnessClubHallLabel.Location = new System.Drawing.Point(8, 52);
+            fitnessClubHallLabel.Name = "fitnessClubHallLabel";
+            fitnessClubHallLabel.Padding = new System.Windows.Forms.Padding(5);
+            fitnessClubHallLabel.Size = new System.Drawing.Size(184, 47);
+            fitnessClubHallLabel.TabIndex = 11;
+            fitnessClubHallLabel.Text = "Зал:";
+            // 
+            // fitnessClubAddressLabel
+            // 
+            fitnessClubAddressLabel.AutoSize = true;
+            fitnessClubAddressLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            fitnessClubAddressLabel.Location = new System.Drawing.Point(8, 99);
+            fitnessClubAddressLabel.Name = "fitnessClubAddressLabel";
+            fitnessClubAddressLabel.Padding = new System.Windows.Forms.Padding(5);
+            fitnessClubAddressLabel.Size = new System.Drawing.Size(184, 47);
+            fitnessClubAddressLabel.TabIndex = 13;
+            fitnessClubAddressLabel.Text = "Адрес:";
+            // 
+            // fitnessClubTelephoneLabel
+            // 
+            fitnessClubTelephoneLabel.AutoSize = true;
+            fitnessClubTelephoneLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            fitnessClubTelephoneLabel.Location = new System.Drawing.Point(8, 146);
+            fitnessClubTelephoneLabel.Name = "fitnessClubTelephoneLabel";
+            fitnessClubTelephoneLabel.Padding = new System.Windows.Forms.Padding(5);
+            fitnessClubTelephoneLabel.Size = new System.Drawing.Size(184, 47);
+            fitnessClubTelephoneLabel.TabIndex = 15;
+            fitnessClubTelephoneLabel.Text = "Телефон:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataSource = this.fitnessClubBindingSource;
+            this.comboBox1.DisplayMember = "FitnessClubID";
+            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(198, 8);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(184, 24);
+            this.comboBox1.TabIndex = 32;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataSource = this.fitnessClubBindingSource;
+            this.comboBox2.DisplayMember = "FitnessClubHall";
+            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(198, 55);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(184, 24);
+            this.comboBox2.TabIndex = 33;
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.maskedTextBox2.Location = new System.Drawing.Point(198, 149);
+            this.maskedTextBox2.Mask = "+7 (999) 000-0000";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(184, 22);
+            this.maskedTextBox2.TabIndex = 35;
+            // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.AutoSize = true;
+            this.tableLayoutPanel9.ColumnCount = 2;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel9.Controls.Add(this.comboBox8, 1, 1);
+            this.tableLayoutPanel9.Controls.Add(this.button1, 1, 4);
+            this.tableLayoutPanel9.Controls.Add(label4, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(label5, 0, 1);
+            this.tableLayoutPanel9.Controls.Add(label6, 0, 2);
+            this.tableLayoutPanel9.Controls.Add(this.comboBox4, 1, 0);
+            this.tableLayoutPanel9.Controls.Add(this.maskedTextBox4, 1, 2);
+            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.Padding = new System.Windows.Forms.Padding(5);
+            this.tableLayoutPanel9.RowCount = 5;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(390, 239);
+            this.tableLayoutPanel9.TabIndex = 10;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            label4.Location = new System.Drawing.Point(8, 5);
+            label4.Name = "label4";
+            label4.Padding = new System.Windows.Forms.Padding(5);
+            label4.Size = new System.Drawing.Size(184, 47);
+            label4.TabIndex = 11;
+            label4.Text = "Зал:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            label5.Location = new System.Drawing.Point(8, 52);
+            label5.Name = "label5";
+            label5.Padding = new System.Windows.Forms.Padding(5);
+            label5.Size = new System.Drawing.Size(184, 47);
+            label5.TabIndex = 13;
+            label5.Text = "Адрес:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            label6.Location = new System.Drawing.Point(8, 99);
+            label6.Name = "label6";
+            label6.Padding = new System.Windows.Forms.Padding(5);
+            label6.Size = new System.Drawing.Size(184, 47);
+            label6.TabIndex = 15;
+            label6.Text = "Телефон:";
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Location = new System.Drawing.Point(198, 196);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(184, 35);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Добавить";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(198, 8);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(184, 24);
+            this.comboBox4.TabIndex = 33;
+            // 
+            // maskedTextBox4
+            // 
+            this.maskedTextBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.maskedTextBox4.Location = new System.Drawing.Point(198, 102);
+            this.maskedTextBox4.Mask = "+7 (999) 000-0000";
+            this.maskedTextBox4.Name = "maskedTextBox4";
+            this.maskedTextBox4.Size = new System.Drawing.Size(184, 22);
+            this.maskedTextBox4.TabIndex = 35;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            label3.Location = new System.Drawing.Point(8, 5);
+            label3.Name = "label3";
+            label3.Padding = new System.Windows.Forms.Padding(5);
+            label3.Size = new System.Drawing.Size(184, 47);
+            label3.TabIndex = 12;
+            label3.Text = "Фитнес клуб ID:";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DataSource = this.fitnessClubBindingSource;
+            this.comboBox3.DisplayMember = "FitnessClubID";
+            this.comboBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(198, 8);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(184, 24);
+            this.comboBox3.TabIndex = 33;
+            // 
+            // tableLayoutPanel10
+            // 
+            this.tableLayoutPanel10.AutoSize = true;
+            this.tableLayoutPanel10.ColumnCount = 2;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel10.Controls.Add(label7, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.servicesPraceTextBox, 1, 2);
+            this.tableLayoutPanel10.Controls.Add(label15, 0, 1);
+            this.tableLayoutPanel10.Controls.Add(label16, 0, 2);
+            this.tableLayoutPanel10.Controls.Add(this.button2, 1, 4);
+            this.tableLayoutPanel10.Controls.Add(this.comboBox5, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.comboBox6, 1, 1);
+            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.Padding = new System.Windows.Forms.Padding(5);
+            this.tableLayoutPanel10.RowCount = 5;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(390, 239);
+            this.tableLayoutPanel10.TabIndex = 10;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Dock = System.Windows.Forms.DockStyle.Fill;
+            label7.Location = new System.Drawing.Point(8, 5);
+            label7.Name = "label7";
+            label7.Padding = new System.Windows.Forms.Padding(5);
+            label7.Size = new System.Drawing.Size(184, 47);
+            label7.TabIndex = 9;
+            label7.Text = "Услуги ID:";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Dock = System.Windows.Forms.DockStyle.Fill;
+            label15.Location = new System.Drawing.Point(8, 52);
+            label15.Name = "label15";
+            label15.Padding = new System.Windows.Forms.Padding(5);
+            label15.Size = new System.Drawing.Size(184, 47);
+            label15.TabIndex = 11;
+            label15.Text = "Наименование:";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Dock = System.Windows.Forms.DockStyle.Fill;
+            label16.Location = new System.Drawing.Point(8, 99);
+            label16.Name = "label16";
+            label16.Padding = new System.Windows.Forms.Padding(5);
+            label16.Size = new System.Drawing.Size(184, 47);
+            label16.TabIndex = 13;
+            label16.Text = "Цена:";
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.Location = new System.Drawing.Point(198, 196);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(184, 35);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "Обновить";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.DataSource = this.servicesBindingSource;
+            this.comboBox5.DisplayMember = "ServicesID";
+            this.comboBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(198, 8);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(184, 24);
+            this.comboBox5.TabIndex = 32;
+            // 
+            // tableLayoutPanel11
+            // 
+            this.tableLayoutPanel11.AutoSize = true;
+            this.tableLayoutPanel11.ColumnCount = 2;
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel11.Controls.Add(this.button3, 1, 4);
+            this.tableLayoutPanel11.Controls.Add(this.textBox5, 1, 0);
+            this.tableLayoutPanel11.Controls.Add(label17, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(label18, 0, 1);
+            this.tableLayoutPanel11.Controls.Add(this.textBox4, 1, 1);
+            this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
+            this.tableLayoutPanel11.Padding = new System.Windows.Forms.Padding(5);
+            this.tableLayoutPanel11.RowCount = 5;
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(390, 239);
+            this.tableLayoutPanel11.TabIndex = 11;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Dock = System.Windows.Forms.DockStyle.Fill;
+            label17.Location = new System.Drawing.Point(8, 5);
+            label17.Name = "label17";
+            label17.Padding = new System.Windows.Forms.Padding(5);
+            label17.Size = new System.Drawing.Size(184, 47);
+            label17.TabIndex = 11;
+            label17.Text = "Наименование:";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Dock = System.Windows.Forms.DockStyle.Fill;
+            label18.Location = new System.Drawing.Point(8, 52);
+            label18.Name = "label18";
+            label18.Padding = new System.Windows.Forms.Padding(5);
+            label18.Size = new System.Drawing.Size(184, 47);
+            label18.TabIndex = 13;
+            label18.Text = "Цена:";
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.Location = new System.Drawing.Point(198, 196);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(184, 35);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Добавить";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox4.Location = new System.Drawing.Point(198, 55);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(184, 22);
+            this.textBox4.TabIndex = 36;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.DataSource = this.servicesBindingSource;
+            this.comboBox6.DisplayMember = "ServicesName";
+            this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(198, 55);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(184, 24);
+            this.comboBox6.TabIndex = 33;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox5.Location = new System.Drawing.Point(198, 8);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(184, 22);
+            this.textBox5.TabIndex = 37;
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.DataSource = this.fitnessClubBindingSource;
+            this.comboBox7.DisplayMember = "FitnessClubAddress";
+            this.comboBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(198, 102);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(184, 24);
+            this.comboBox7.TabIndex = 36;
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Location = new System.Drawing.Point(198, 55);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(184, 24);
+            this.comboBox8.TabIndex = 36;
+            // 
+            // servicesPraceTextBox
+            // 
+            this.servicesPraceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.servicesBindingSource, "ServicesPrace", true));
+            this.servicesPraceTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.servicesPraceTextBox.Location = new System.Drawing.Point(198, 102);
+            this.servicesPraceTextBox.Name = "servicesPraceTextBox";
+            this.servicesPraceTextBox.Size = new System.Drawing.Size(184, 22);
+            this.servicesPraceTextBox.TabIndex = 11;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Dock = System.Windows.Forms.DockStyle.Fill;
+            label8.Location = new System.Drawing.Point(8, 5);
+            label8.Name = "label8";
+            label8.Padding = new System.Windows.Forms.Padding(5);
+            label8.Size = new System.Drawing.Size(184, 47);
+            label8.TabIndex = 12;
+            label8.Text = "Услуги ID:";
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.DataSource = this.servicesBindingSource;
+            this.comboBox9.DisplayMember = "ServicesID";
+            this.comboBox9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Location = new System.Drawing.Point(198, 8);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(184, 24);
+            this.comboBox9.TabIndex = 33;
+            // 
+            // comboBox10
+            // 
+            this.comboBox10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Location = new System.Drawing.Point(198, 8);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(184, 24);
+            this.comboBox10.TabIndex = 32;
+            // 
+            // comboBox11
+            // 
+            this.comboBox11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox11.FormattingEnabled = true;
+            this.comboBox11.Location = new System.Drawing.Point(198, 55);
+            this.comboBox11.Name = "comboBox11";
+            this.comboBox11.Size = new System.Drawing.Size(184, 24);
+            this.comboBox11.TabIndex = 33;
+            // 
+            // comboBox12
+            // 
+            this.comboBox12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox12.FormattingEnabled = true;
+            this.comboBox12.Location = new System.Drawing.Point(198, 102);
+            this.comboBox12.Name = "comboBox12";
+            this.comboBox12.Size = new System.Drawing.Size(184, 24);
+            this.comboBox12.TabIndex = 34;
+            // 
+            // comboBox13
+            // 
+            this.comboBox13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox13.FormattingEnabled = true;
+            this.comboBox13.Location = new System.Drawing.Point(198, 149);
+            this.comboBox13.Name = "comboBox13";
+            this.comboBox13.Size = new System.Drawing.Size(184, 24);
+            this.comboBox13.TabIndex = 35;
+            // 
+            // comboBox14
+            // 
+            this.comboBox14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox14.FormattingEnabled = true;
+            this.comboBox14.Location = new System.Drawing.Point(778, 8);
+            this.comboBox14.Name = "comboBox14";
+            this.comboBox14.Size = new System.Drawing.Size(184, 24);
+            this.comboBox14.TabIndex = 36;
+            // 
+            // comboBox15
+            // 
+            this.comboBox15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox15.FormattingEnabled = true;
+            this.comboBox15.Location = new System.Drawing.Point(778, 55);
+            this.comboBox15.Name = "comboBox15";
+            this.comboBox15.Size = new System.Drawing.Size(184, 24);
+            this.comboBox15.TabIndex = 37;
+            // 
+            // documentIDLabel
+            // 
+            documentIDLabel.AutoSize = true;
+            documentIDLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            documentIDLabel.Location = new System.Drawing.Point(8, 5);
+            documentIDLabel.Name = "documentIDLabel";
+            documentIDLabel.Padding = new System.Windows.Forms.Padding(5);
+            documentIDLabel.Size = new System.Drawing.Size(184, 47);
+            documentIDLabel.TabIndex = 9;
+            documentIDLabel.Text = "Документ ID:";
+            // 
+            // clientIDLabel
+            // 
+            clientIDLabel.AutoSize = true;
+            clientIDLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            clientIDLabel.Location = new System.Drawing.Point(8, 52);
+            clientIDLabel.Name = "clientIDLabel";
+            clientIDLabel.Padding = new System.Windows.Forms.Padding(5);
+            clientIDLabel.Size = new System.Drawing.Size(184, 47);
+            clientIDLabel.TabIndex = 11;
+            clientIDLabel.Text = "Клиент ФИО:";
+            // 
+            // coachIDLabel2
+            // 
+            coachIDLabel2.AutoSize = true;
+            coachIDLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            coachIDLabel2.Location = new System.Drawing.Point(8, 99);
+            coachIDLabel2.Name = "coachIDLabel2";
+            coachIDLabel2.Padding = new System.Windows.Forms.Padding(5);
+            coachIDLabel2.Size = new System.Drawing.Size(184, 47);
+            coachIDLabel2.TabIndex = 13;
+            coachIDLabel2.Text = "Тренер ФИО:";
+            // 
+            // fitnessClubIDLabel1
+            // 
+            fitnessClubIDLabel1.AutoSize = true;
+            fitnessClubIDLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            fitnessClubIDLabel1.Location = new System.Drawing.Point(8, 146);
+            fitnessClubIDLabel1.Name = "fitnessClubIDLabel1";
+            fitnessClubIDLabel1.Padding = new System.Windows.Forms.Padding(5);
+            fitnessClubIDLabel1.Size = new System.Drawing.Size(184, 47);
+            fitnessClubIDLabel1.TabIndex = 15;
+            fitnessClubIDLabel1.Text = "Фитнес зал:";
+            // 
+            // staffIDLabel2
+            // 
+            staffIDLabel2.AutoSize = true;
+            staffIDLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            staffIDLabel2.Location = new System.Drawing.Point(618, 5);
+            staffIDLabel2.Name = "staffIDLabel2";
+            staffIDLabel2.Padding = new System.Windows.Forms.Padding(5);
+            staffIDLabel2.Size = new System.Drawing.Size(154, 47);
+            staffIDLabel2.TabIndex = 17;
+            staffIDLabel2.Text = "Сотрудник ФИО:";
+            // 
+            // servicesIDLabel
+            // 
+            servicesIDLabel.AutoSize = true;
+            servicesIDLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            servicesIDLabel.Location = new System.Drawing.Point(618, 52);
+            servicesIDLabel.Name = "servicesIDLabel";
+            servicesIDLabel.Padding = new System.Windows.Forms.Padding(5);
+            servicesIDLabel.Size = new System.Drawing.Size(154, 47);
+            servicesIDLabel.TabIndex = 19;
+            servicesIDLabel.Text = "Название услуги:";
+            // 
+            // dateLabel
+            // 
+            dateLabel.AutoSize = true;
+            dateLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            dateLabel.Location = new System.Drawing.Point(618, 99);
+            dateLabel.Name = "dateLabel";
+            dateLabel.Padding = new System.Windows.Forms.Padding(5);
+            dateLabel.Size = new System.Drawing.Size(154, 47);
+            dateLabel.TabIndex = 21;
+            dateLabel.Text = "Дата:";
+            // 
+            // dateDateTimePicker
+            // 
+            this.dateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.documentsBindingSource, "Date", true));
+            this.dateDateTimePicker.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateDateTimePicker.Location = new System.Drawing.Point(778, 102);
+            this.dateDateTimePicker.Name = "dateDateTimePicker";
+            this.dateDateTimePicker.Size = new System.Drawing.Size(184, 22);
+            this.dateDateTimePicker.TabIndex = 22;
+            // 
+            // timeLabel
+            // 
+            timeLabel.AutoSize = true;
+            timeLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            timeLabel.Location = new System.Drawing.Point(618, 146);
+            timeLabel.Name = "timeLabel";
+            timeLabel.Padding = new System.Windows.Forms.Padding(5);
+            timeLabel.Size = new System.Drawing.Size(154, 47);
+            timeLabel.TabIndex = 23;
+            timeLabel.Text = "Время:";
+            // 
+            // timeDateTimePicker
+            // 
+            this.timeDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.documentsBindingSource, "Time", true));
+            this.timeDateTimePicker.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeDateTimePicker.Location = new System.Drawing.Point(778, 149);
+            this.timeDateTimePicker.Name = "timeDateTimePicker";
+            this.timeDateTimePicker.Size = new System.Drawing.Size(184, 22);
+            this.timeDateTimePicker.TabIndex = 24;
+            // 
+            // tableLayoutPanel13
+            // 
+            this.tableLayoutPanel13.AutoSize = true;
+            this.tableLayoutPanel13.ColumnCount = 5;
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel13.Controls.Add(this.button4, 4, 4);
+            this.tableLayoutPanel13.Controls.Add(label23, 0, 0);
+            this.tableLayoutPanel13.Controls.Add(label22, 0, 1);
+            this.tableLayoutPanel13.Controls.Add(label21, 0, 2);
+            this.tableLayoutPanel13.Controls.Add(this.comboBox17, 1, 0);
+            this.tableLayoutPanel13.Controls.Add(this.comboBox18, 1, 1);
+            this.tableLayoutPanel13.Controls.Add(this.comboBox19, 1, 2);
+            this.tableLayoutPanel13.Controls.Add(label20, 0, 3);
+            this.tableLayoutPanel13.Controls.Add(label19, 3, 0);
+            this.tableLayoutPanel13.Controls.Add(label10, 3, 1);
+            this.tableLayoutPanel13.Controls.Add(label9, 3, 2);
+            this.tableLayoutPanel13.Controls.Add(this.comboBox20, 1, 3);
+            this.tableLayoutPanel13.Controls.Add(this.comboBox21, 4, 0);
+            this.tableLayoutPanel13.Controls.Add(this.dateTimePicker1, 4, 1);
+            this.tableLayoutPanel13.Controls.Add(this.dateTimePicker2, 4, 2);
+            this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
+            this.tableLayoutPanel13.Padding = new System.Windows.Forms.Padding(5);
+            this.tableLayoutPanel13.RowCount = 5;
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(970, 239);
+            this.tableLayoutPanel13.TabIndex = 10;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Dock = System.Windows.Forms.DockStyle.Fill;
+            label9.Location = new System.Drawing.Point(618, 99);
+            label9.Name = "label9";
+            label9.Padding = new System.Windows.Forms.Padding(5);
+            label9.Size = new System.Drawing.Size(154, 47);
+            label9.TabIndex = 23;
+            label9.Text = "Время:";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Dock = System.Windows.Forms.DockStyle.Fill;
+            label10.Location = new System.Drawing.Point(618, 52);
+            label10.Name = "label10";
+            label10.Padding = new System.Windows.Forms.Padding(5);
+            label10.Size = new System.Drawing.Size(154, 47);
+            label10.TabIndex = 21;
+            label10.Text = "Дата:";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Dock = System.Windows.Forms.DockStyle.Fill;
+            label19.Location = new System.Drawing.Point(618, 5);
+            label19.Name = "label19";
+            label19.Padding = new System.Windows.Forms.Padding(5);
+            label19.Size = new System.Drawing.Size(154, 47);
+            label19.TabIndex = 19;
+            label19.Text = "Название услуги:";
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Dock = System.Windows.Forms.DockStyle.Fill;
+            label20.Location = new System.Drawing.Point(8, 146);
+            label20.Name = "label20";
+            label20.Padding = new System.Windows.Forms.Padding(5);
+            label20.Size = new System.Drawing.Size(184, 47);
+            label20.TabIndex = 17;
+            label20.Text = "Сотрудник ФИО:";
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Dock = System.Windows.Forms.DockStyle.Fill;
+            label21.Location = new System.Drawing.Point(8, 99);
+            label21.Name = "label21";
+            label21.Padding = new System.Windows.Forms.Padding(5);
+            label21.Size = new System.Drawing.Size(184, 47);
+            label21.TabIndex = 15;
+            label21.Text = "Фитнес зал:";
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Dock = System.Windows.Forms.DockStyle.Fill;
+            label22.Location = new System.Drawing.Point(8, 52);
+            label22.Name = "label22";
+            label22.Padding = new System.Windows.Forms.Padding(5);
+            label22.Size = new System.Drawing.Size(184, 47);
+            label22.TabIndex = 13;
+            label22.Text = "Тренер ФИО:";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Dock = System.Windows.Forms.DockStyle.Fill;
+            label23.Location = new System.Drawing.Point(8, 5);
+            label23.Name = "label23";
+            label23.Padding = new System.Windows.Forms.Padding(5);
+            label23.Size = new System.Drawing.Size(184, 47);
+            label23.TabIndex = 11;
+            label23.Text = "Клиент ФИО:";
+            // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button4.Location = new System.Drawing.Point(778, 196);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(184, 35);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "Добавить";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // comboBox17
+            // 
+            this.comboBox17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox17.FormattingEnabled = true;
+            this.comboBox17.Location = new System.Drawing.Point(198, 8);
+            this.comboBox17.Name = "comboBox17";
+            this.comboBox17.Size = new System.Drawing.Size(184, 24);
+            this.comboBox17.TabIndex = 33;
+            // 
+            // comboBox18
+            // 
+            this.comboBox18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox18.FormattingEnabled = true;
+            this.comboBox18.Location = new System.Drawing.Point(198, 55);
+            this.comboBox18.Name = "comboBox18";
+            this.comboBox18.Size = new System.Drawing.Size(184, 24);
+            this.comboBox18.TabIndex = 34;
+            // 
+            // comboBox19
+            // 
+            this.comboBox19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox19.FormattingEnabled = true;
+            this.comboBox19.Location = new System.Drawing.Point(198, 102);
+            this.comboBox19.Name = "comboBox19";
+            this.comboBox19.Size = new System.Drawing.Size(184, 24);
+            this.comboBox19.TabIndex = 35;
+            // 
+            // comboBox20
+            // 
+            this.comboBox20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox20.FormattingEnabled = true;
+            this.comboBox20.Location = new System.Drawing.Point(198, 149);
+            this.comboBox20.Name = "comboBox20";
+            this.comboBox20.Size = new System.Drawing.Size(184, 24);
+            this.comboBox20.TabIndex = 36;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.documentsBindingSource, "Date", true));
+            this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePicker1.Location = new System.Drawing.Point(778, 55);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(184, 22);
+            this.dateTimePicker1.TabIndex = 22;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.documentsBindingSource, "Time", true));
+            this.dateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePicker2.Location = new System.Drawing.Point(778, 102);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(184, 22);
+            this.dateTimePicker2.TabIndex = 24;
+            // 
+            // comboBox21
+            // 
+            this.comboBox21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox21.FormattingEnabled = true;
+            this.comboBox21.Location = new System.Drawing.Point(778, 8);
+            this.comboBox21.Name = "comboBox21";
+            this.comboBox21.Size = new System.Drawing.Size(184, 24);
+            this.comboBox21.TabIndex = 37;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Dock = System.Windows.Forms.DockStyle.Fill;
+            label24.Location = new System.Drawing.Point(8, 5);
+            label24.Name = "label24";
+            label24.Padding = new System.Windows.Forms.Padding(5);
+            label24.Size = new System.Drawing.Size(184, 47);
+            label24.TabIndex = 33;
+            label24.Text = "Документ ID:";
+            // 
+            // comboBox16
+            // 
+            this.comboBox16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox16.FormattingEnabled = true;
+            this.comboBox16.Location = new System.Drawing.Point(198, 8);
+            this.comboBox16.Name = "comboBox16";
+            this.comboBox16.Size = new System.Drawing.Size(184, 24);
+            this.comboBox16.TabIndex = 34;
+            // 
+            // paymentIDLabel
+            // 
+            paymentIDLabel.AutoSize = true;
+            paymentIDLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            paymentIDLabel.Location = new System.Drawing.Point(8, 5);
+            paymentIDLabel.Name = "paymentIDLabel";
+            paymentIDLabel.Padding = new System.Windows.Forms.Padding(5);
+            paymentIDLabel.Size = new System.Drawing.Size(184, 47);
+            paymentIDLabel.TabIndex = 9;
+            paymentIDLabel.Text = "Платеж ID:";
+            // 
+            // paymentPaidLabel
+            // 
+            paymentPaidLabel.AutoSize = true;
+            paymentPaidLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            paymentPaidLabel.Location = new System.Drawing.Point(8, 52);
+            paymentPaidLabel.Name = "paymentPaidLabel";
+            paymentPaidLabel.Padding = new System.Windows.Forms.Padding(5);
+            paymentPaidLabel.Size = new System.Drawing.Size(184, 47);
+            paymentPaidLabel.TabIndex = 11;
+            paymentPaidLabel.Text = "Статус:";
+            // 
+            // comboBox22
+            // 
+            this.comboBox22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox22.FormattingEnabled = true;
+            this.comboBox22.Location = new System.Drawing.Point(198, 8);
+            this.comboBox22.Name = "comboBox22";
+            this.comboBox22.Size = new System.Drawing.Size(184, 24);
+            this.comboBox22.TabIndex = 12;
+            // 
+            // comboBox23
+            // 
+            this.comboBox23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox23.FormattingEnabled = true;
+            this.comboBox23.Location = new System.Drawing.Point(198, 55);
+            this.comboBox23.Name = "comboBox23";
+            this.comboBox23.Size = new System.Drawing.Size(184, 24);
+            this.comboBox23.TabIndex = 13;
+            // 
+            // tableLayoutPanel18
+            // 
+            this.tableLayoutPanel18.AutoSize = true;
+            this.tableLayoutPanel18.ColumnCount = 2;
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel18.Controls.Add(this.button5, 1, 4);
+            this.tableLayoutPanel18.Controls.Add(label12, 0, 0);
+            this.tableLayoutPanel18.Controls.Add(this.comboBox24, 1, 0);
+            this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tableLayoutPanel18.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel18.Name = "tableLayoutPanel18";
+            this.tableLayoutPanel18.Padding = new System.Windows.Forms.Padding(5);
+            this.tableLayoutPanel18.RowCount = 5;
+            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel18.Size = new System.Drawing.Size(390, 239);
+            this.tableLayoutPanel18.TabIndex = 10;
+            // 
+            // comboBox24
+            // 
+            this.comboBox24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox24.FormattingEnabled = true;
+            this.comboBox24.Location = new System.Drawing.Point(198, 8);
+            this.comboBox24.Name = "comboBox24";
+            this.comboBox24.Size = new System.Drawing.Size(184, 24);
+            this.comboBox24.TabIndex = 13;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Dock = System.Windows.Forms.DockStyle.Fill;
+            label12.Location = new System.Drawing.Point(8, 5);
+            label12.Name = "label12";
+            label12.Padding = new System.Windows.Forms.Padding(5);
+            label12.Size = new System.Drawing.Size(184, 47);
+            label12.TabIndex = 11;
+            label12.Text = "Статус:";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(198, 196);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(184, 35);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "Добавить";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Dock = System.Windows.Forms.DockStyle.Fill;
+            label11.Location = new System.Drawing.Point(8, 5);
+            label11.Name = "label11";
+            label11.Padding = new System.Windows.Forms.Padding(5);
+            label11.Size = new System.Drawing.Size(184, 47);
+            label11.TabIndex = 13;
+            label11.Text = "Платеж ID:";
+            // 
+            // comboBox25
+            // 
+            this.comboBox25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox25.FormattingEnabled = true;
+            this.comboBox25.Location = new System.Drawing.Point(198, 8);
+            this.comboBox25.Name = "comboBox25";
+            this.comboBox25.Size = new System.Drawing.Size(184, 24);
+            this.comboBox25.TabIndex = 14;
+            // 
+            // userIDLabel
+            // 
+            userIDLabel.AutoSize = true;
+            userIDLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            userIDLabel.Location = new System.Drawing.Point(8, 5);
+            userIDLabel.Name = "userIDLabel";
+            userIDLabel.Padding = new System.Windows.Forms.Padding(5);
+            userIDLabel.Size = new System.Drawing.Size(184, 47);
+            userIDLabel.TabIndex = 9;
+            userIDLabel.Text = "Пользователь ID:";
+            // 
+            // userNameLabel
+            // 
+            userNameLabel.AutoSize = true;
+            userNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            userNameLabel.Location = new System.Drawing.Point(8, 52);
+            userNameLabel.Name = "userNameLabel";
+            userNameLabel.Padding = new System.Windows.Forms.Padding(5);
+            userNameLabel.Size = new System.Drawing.Size(184, 47);
+            userNameLabel.TabIndex = 11;
+            userNameLabel.Text = "ФИО:";
+            // 
+            // userLoginLabel
+            // 
+            userLoginLabel.AutoSize = true;
+            userLoginLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            userLoginLabel.Location = new System.Drawing.Point(8, 99);
+            userLoginLabel.Name = "userLoginLabel";
+            userLoginLabel.Padding = new System.Windows.Forms.Padding(5);
+            userLoginLabel.Size = new System.Drawing.Size(184, 47);
+            userLoginLabel.TabIndex = 13;
+            userLoginLabel.Text = "Логин:";
+            // 
+            // userPasswordLabel
+            // 
+            userPasswordLabel.AutoSize = true;
+            userPasswordLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            userPasswordLabel.Location = new System.Drawing.Point(8, 146);
+            userPasswordLabel.Name = "userPasswordLabel";
+            userPasswordLabel.Padding = new System.Windows.Forms.Padding(5);
+            userPasswordLabel.Size = new System.Drawing.Size(184, 47);
+            userPasswordLabel.TabIndex = 15;
+            userPasswordLabel.Text = "Паспорт:";
+            // 
+            // comboBox26
+            // 
+            this.comboBox26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox26.FormattingEnabled = true;
+            this.comboBox26.Location = new System.Drawing.Point(198, 8);
+            this.comboBox26.Name = "comboBox26";
+            this.comboBox26.Size = new System.Drawing.Size(184, 24);
+            this.comboBox26.TabIndex = 32;
+            // 
+            // comboBox27
+            // 
+            this.comboBox27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox27.FormattingEnabled = true;
+            this.comboBox27.Location = new System.Drawing.Point(198, 55);
+            this.comboBox27.Name = "comboBox27";
+            this.comboBox27.Size = new System.Drawing.Size(184, 24);
+            this.comboBox27.TabIndex = 33;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label25.ForeColor = System.Drawing.Color.Red;
+            this.label25.Location = new System.Drawing.Point(388, 146);
+            this.label25.Name = "label25";
+            this.label25.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.label25.Size = new System.Drawing.Size(224, 47);
+            this.label25.TabIndex = 34;
+            this.label25.Text = "*Обязательно для заполнение";
+            this.label25.Visible = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.Location = new System.Drawing.Point(198, 102);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(184, 22);
+            this.textBox1.TabIndex = 35;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox2.Location = new System.Drawing.Point(198, 149);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(184, 22);
+            this.textBox2.TabIndex = 36;
+            // 
+            // tableLayoutPanel19
+            // 
+            this.tableLayoutPanel19.AutoSize = true;
+            this.tableLayoutPanel19.ColumnCount = 3;
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
+            this.tableLayoutPanel19.Controls.Add(this.button6, 1, 4);
+            this.tableLayoutPanel19.Controls.Add(label26, 0, 0);
+            this.tableLayoutPanel19.Controls.Add(label27, 0, 1);
+            this.tableLayoutPanel19.Controls.Add(label28, 0, 2);
+            this.tableLayoutPanel19.Controls.Add(this.comboBox29, 1, 0);
+            this.tableLayoutPanel19.Controls.Add(this.textBox3, 1, 1);
+            this.tableLayoutPanel19.Controls.Add(this.textBox6, 1, 2);
+            this.tableLayoutPanel19.Controls.Add(this.label29, 2, 1);
+            this.tableLayoutPanel19.Controls.Add(this.label30, 2, 2);
+            this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tableLayoutPanel19.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel19.Name = "tableLayoutPanel19";
+            this.tableLayoutPanel19.Padding = new System.Windows.Forms.Padding(5);
+            this.tableLayoutPanel19.RowCount = 5;
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(620, 239);
+            this.tableLayoutPanel19.TabIndex = 10;
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.Dock = System.Windows.Forms.DockStyle.Fill;
+            label26.Location = new System.Drawing.Point(8, 5);
+            label26.Name = "label26";
+            label26.Padding = new System.Windows.Forms.Padding(5);
+            label26.Size = new System.Drawing.Size(184, 47);
+            label26.TabIndex = 11;
+            label26.Text = "ФИО:";
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Dock = System.Windows.Forms.DockStyle.Fill;
+            label27.Location = new System.Drawing.Point(8, 52);
+            label27.Name = "label27";
+            label27.Padding = new System.Windows.Forms.Padding(5);
+            label27.Size = new System.Drawing.Size(184, 47);
+            label27.TabIndex = 13;
+            label27.Text = "Логин:";
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Dock = System.Windows.Forms.DockStyle.Fill;
+            label28.Location = new System.Drawing.Point(8, 99);
+            label28.Name = "label28";
+            label28.Padding = new System.Windows.Forms.Padding(5);
+            label28.Size = new System.Drawing.Size(184, 47);
+            label28.TabIndex = 15;
+            label28.Text = "Паспорт:";
+            // 
+            // comboBox29
+            // 
+            this.comboBox29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox29.FormattingEnabled = true;
+            this.comboBox29.Location = new System.Drawing.Point(198, 8);
+            this.comboBox29.Name = "comboBox29";
+            this.comboBox29.Size = new System.Drawing.Size(184, 24);
+            this.comboBox29.TabIndex = 33;
+            // 
+            // button6
+            // 
+            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button6.Location = new System.Drawing.Point(198, 196);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(184, 35);
+            this.button6.TabIndex = 11;
+            this.button6.Text = "Добавить";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label29.ForeColor = System.Drawing.Color.Red;
+            this.label29.Location = new System.Drawing.Point(388, 52);
+            this.label29.Name = "label29";
+            this.label29.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.label29.Size = new System.Drawing.Size(224, 47);
+            this.label29.TabIndex = 31;
+            this.label29.Text = "*Обязательно для заполнение";
+            this.label29.Visible = false;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label30.ForeColor = System.Drawing.Color.Red;
+            this.label30.Location = new System.Drawing.Point(388, 99);
+            this.label30.Name = "label30";
+            this.label30.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.label30.Size = new System.Drawing.Size(224, 47);
+            this.label30.TabIndex = 34;
+            this.label30.Text = "*Обязательно для заполнение";
+            this.label30.Visible = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox3.Location = new System.Drawing.Point(198, 55);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(184, 22);
+            this.textBox3.TabIndex = 35;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox6.Location = new System.Drawing.Point(198, 102);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(184, 22);
+            this.textBox6.TabIndex = 36;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Dock = System.Windows.Forms.DockStyle.Fill;
+            label14.Location = new System.Drawing.Point(8, 5);
+            label14.Name = "label14";
+            label14.Padding = new System.Windows.Forms.Padding(5);
+            label14.Size = new System.Drawing.Size(184, 47);
+            label14.TabIndex = 33;
+            label14.Text = "Пользователь ID:";
+            // 
+            // comboBox28
+            // 
+            this.comboBox28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox28.FormattingEnabled = true;
+            this.comboBox28.Location = new System.Drawing.Point(198, 8);
+            this.comboBox28.Name = "comboBox28";
+            this.comboBox28.Size = new System.Drawing.Size(184, 24);
+            this.comboBox28.TabIndex = 34;
+            // 
             // Fitness_Club
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -4050,7 +5131,7 @@
             this.DB_Pages.ResumeLayout(false);
             this.ClientPage.ResumeLayout(false);
             this.ClientPage.PerformLayout();
-            this.tableLayoutPanel8.ResumeLayout(false);
+            this.Client_tableLayoutPanel.ResumeLayout(false);
             this.Client_edit_panel.ResumeLayout(false);
             this.Client_update_panel.ResumeLayout(false);
             this.Client_update_panel.PerformLayout();
@@ -4077,6 +5158,7 @@
             this.tabPage1.PerformLayout();
             this.Coach_Update_tableLayoutPanel.ResumeLayout(false);
             this.Coach_Update_tableLayoutPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.Coach_Add_tableLayoutPanel.ResumeLayout(false);
@@ -4085,7 +5167,6 @@
             this.tabPage3.PerformLayout();
             this.tableLayoutPanel17.ResumeLayout(false);
             this.tableLayoutPanel17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Coach_dataGridView)).EndInit();
             this.Coach_toolStrip.ResumeLayout(false);
             this.Coach_toolStrip.PerformLayout();
@@ -4095,17 +5176,18 @@
             this.tabControl2.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            this.tableLayoutPanel11.ResumeLayout(false);
-            this.tableLayoutPanel11.PerformLayout();
+            this.Staff_Update_tableLayoutPanel.ResumeLayout(false);
+            this.Staff_Update_tableLayoutPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            this.tableLayoutPanel18.ResumeLayout(false);
-            this.tableLayoutPanel18.PerformLayout();
+            this.Staff_Add_tableLayoutPanel.ResumeLayout(false);
+            this.Staff_Add_tableLayoutPanel.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
-            this.tableLayoutPanel19.ResumeLayout(false);
+            this.Staff_Delete_tableLayoutPanel.ResumeLayout(false);
+            this.Staff_Delete_tableLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Staff_dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource)).EndInit();
             this.Staff_toolStrip.ResumeLayout(false);
             this.Staff_toolStrip.PerformLayout();
             this.FitnessClubPage.ResumeLayout(false);
@@ -4118,11 +5200,10 @@
             this.tableLayoutPanel12.PerformLayout();
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
-            this.tableLayoutPanel20.ResumeLayout(false);
-            this.tableLayoutPanel20.PerformLayout();
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
             this.tableLayoutPanel21.ResumeLayout(false);
+            this.tableLayoutPanel21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FitnessClub_dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fitnessClubBindingSource)).EndInit();
             this.FitnessClub_toolStrip.ResumeLayout(false);
@@ -4133,15 +5214,12 @@
             this.tabControl4.ResumeLayout(false);
             this.tabPage10.ResumeLayout(false);
             this.tabPage10.PerformLayout();
-            this.tableLayoutPanel13.ResumeLayout(false);
-            this.tableLayoutPanel13.PerformLayout();
             this.tabPage11.ResumeLayout(false);
             this.tabPage11.PerformLayout();
-            this.tableLayoutPanel22.ResumeLayout(false);
-            this.tableLayoutPanel22.PerformLayout();
             this.tabPage12.ResumeLayout(false);
             this.tabPage12.PerformLayout();
             this.tableLayoutPanel26.ResumeLayout(false);
+            this.tableLayoutPanel26.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Services_dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.servicesBindingSource)).EndInit();
             this.Services_toolStrip.ResumeLayout(false);
@@ -4156,11 +5234,10 @@
             this.tableLayoutPanel14.PerformLayout();
             this.tabPage14.ResumeLayout(false);
             this.tabPage14.PerformLayout();
-            this.tableLayoutPanel27.ResumeLayout(false);
-            this.tableLayoutPanel27.PerformLayout();
             this.tabPage15.ResumeLayout(false);
             this.tabPage15.PerformLayout();
             this.tableLayoutPanel28.ResumeLayout(false);
+            this.tableLayoutPanel28.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Documents_dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentsBindingSource)).EndInit();
             this.Documents_toolStrip.ResumeLayout(false);
@@ -4175,11 +5252,10 @@
             this.tableLayoutPanel15.PerformLayout();
             this.tabPage17.ResumeLayout(false);
             this.tabPage17.PerformLayout();
-            this.tableLayoutPanel29.ResumeLayout(false);
-            this.tableLayoutPanel29.PerformLayout();
             this.tabPage18.ResumeLayout(false);
             this.tabPage18.PerformLayout();
             this.tableLayoutPanel30.ResumeLayout(false);
+            this.tableLayoutPanel30.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Payment_dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paymentBindingSource)).EndInit();
             this.Payment_toolStrip.ResumeLayout(false);
@@ -4194,15 +5270,26 @@
             this.tableLayoutPanel16.PerformLayout();
             this.Users_add_panel.ResumeLayout(false);
             this.Users_add_panel.PerformLayout();
-            this.tableLayoutPanel31.ResumeLayout(false);
-            this.tableLayoutPanel31.PerformLayout();
             this.Users_delete_panel.ResumeLayout(false);
             this.Users_delete_panel.PerformLayout();
             this.tableLayoutPanel32.ResumeLayout(false);
+            this.tableLayoutPanel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Users_dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.Users_toolStrip.ResumeLayout(false);
             this.Users_toolStrip.PerformLayout();
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel9.PerformLayout();
+            this.tableLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel10.PerformLayout();
+            this.tableLayoutPanel11.ResumeLayout(false);
+            this.tableLayoutPanel11.PerformLayout();
+            this.tableLayoutPanel13.ResumeLayout(false);
+            this.tableLayoutPanel13.PerformLayout();
+            this.tableLayoutPanel18.ResumeLayout(false);
+            this.tableLayoutPanel18.PerformLayout();
+            this.tableLayoutPanel19.ResumeLayout(false);
+            this.tableLayoutPanel19.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4255,7 +5342,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        private System.Windows.Forms.TableLayoutPanel Client_tableLayoutPanel;
         private System.Windows.Forms.DataGridView Client_dataGridView;
         private FitnessClubDataSet fitnessClubDataSet;
         private System.Windows.Forms.BindingSource clientBindingSource;
@@ -4364,37 +5451,27 @@
         private System.Windows.Forms.Button Client_Delete_Button;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TableLayoutPanel Staff_Update_tableLayoutPanel;
+        private System.Windows.Forms.Button Staff_Update_Button;
+        private System.Windows.Forms.Label StaffName_Update_Must_Label;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TableLayoutPanel Staff_Add_tableLayoutPanel;
+        private System.Windows.Forms.Button Staff_Add_Button;
+        private System.Windows.Forms.Label StaffName_Add_Must_Label;
         private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TableLayoutPanel Staff_Delete_tableLayoutPanel;
+        private System.Windows.Forms.Button Staff_Delete_Button;
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TabPage tabPage8;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel21;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.TabControl tabControl4;
         private System.Windows.Forms.TabPage tabPage10;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TabPage tabPage11;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel22;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TabPage tabPage12;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel26;
         private System.Windows.Forms.Button button12;
@@ -4402,11 +5479,7 @@
         private System.Windows.Forms.TabPage tabPage13;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
         private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TabPage tabPage14;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel27;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TabPage tabPage15;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel28;
         private System.Windows.Forms.Button button15;
@@ -4414,11 +5487,7 @@
         private System.Windows.Forms.TabPage tabPage16;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TabPage tabPage17;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel29;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TabPage tabPage18;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel30;
         private System.Windows.Forms.Button button18;
@@ -4428,9 +5497,6 @@
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TabPage Users_add_panel;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel31;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TabPage Users_delete_panel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel32;
         private System.Windows.Forms.Button button21;
@@ -4454,7 +5520,6 @@
         private System.Windows.Forms.TableLayoutPanel Client_Update_tableLayoutPanel;
         private System.Windows.Forms.Button Client_Update_Button;
         private System.Windows.Forms.Label Telephone_Update_Must_Label;
-        private System.Windows.Forms.Label ID_Update_Must_Label;
         private System.Windows.Forms.Label Name_Update_Must_Label;
         private System.Windows.Forms.Label Passport_Update_Must_Label;
         private System.Windows.Forms.ComboBox ClientID_Update_comboBox;
@@ -4473,7 +5538,6 @@
         private System.Windows.Forms.MaskedTextBox CoachTelephone_Update_MaskedTextBox;
         private System.Windows.Forms.ComboBox CoachAddress_Update_ComboBox;
         private System.Windows.Forms.ComboBox CoachEmail_Update_ComboBox;
-        private System.Windows.Forms.Label CoachID_Update_Must_Label;
         private System.Windows.Forms.Label CoachName_Update_Must_Label;
         private System.Windows.Forms.Label CoachPassport_Update_Must_Label;
         private System.Windows.Forms.MaskedTextBox CoachTelephone_Add_MaskedTextBox;
@@ -4484,5 +5548,68 @@
         private System.Windows.Forms.TextBox CoachName_Add_TextBox;
         private System.Windows.Forms.MaskedTextBox CoachPassport_Add_MaskedTextBox;
         private System.Windows.Forms.ComboBox CoachID_Delete_ComboBox;
+        private System.Windows.Forms.ComboBox StaffID_Update_ComboBox;
+        private System.Windows.Forms.ComboBox StaffPosition_Update_ComboBox;
+        private System.Windows.Forms.ComboBox StaffName_Update_ComboBox;
+        private System.Windows.Forms.ComboBox StaffPosition_Add_ComboBox;
+        private System.Windows.Forms.ComboBox StaffID_Delete_ComboBox;
+        private System.Windows.Forms.TextBox StaffName_Add_TexBox;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.TextBox servicesPraceTextBox;
+        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.ComboBox comboBox14;
+        private System.Windows.Forms.DateTimePicker dateDateTimePicker;
+        private System.Windows.Forms.DateTimePicker timeDateTimePicker;
+        private System.Windows.Forms.ComboBox comboBox15;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ComboBox comboBox17;
+        private System.Windows.Forms.ComboBox comboBox18;
+        private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.ComboBox comboBox20;
+        private System.Windows.Forms.ComboBox comboBox21;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.ComboBox comboBox16;
+        private System.Windows.Forms.ComboBox comboBox23;
+        private System.Windows.Forms.ComboBox comboBox22;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
+        private System.Windows.Forms.ComboBox comboBox24;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.ComboBox comboBox25;
+        private System.Windows.Forms.ComboBox comboBox26;
+        private System.Windows.Forms.ComboBox comboBox27;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ComboBox comboBox29;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.ComboBox comboBox28;
     }
 }

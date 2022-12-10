@@ -16,7 +16,7 @@ namespace FitnessClub
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Fitness_Club());
+            Application.Run(new SignIn());
         }
     }
 }

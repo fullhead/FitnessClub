@@ -849,7 +849,6 @@ namespace FitnessClub
         {
             if (this.ClientName_Update_ComboBox.Text == "")
             {
-                ID_Update_Must_Label.Show();
                 Name_Update_Must_Label.Show();
                 Passport_Update_Must_Label.Show();
                 Telephone_Update_Must_Label.Show();
@@ -887,7 +886,6 @@ namespace FitnessClub
         //Show or hide Required fields
         private void Client_Update_tableLayoutPanel_MouseMove(object sender, MouseEventArgs e)
         {
-            ID_Update_Must_Label.Hide();
             Name_Update_Must_Label.Hide();
             Passport_Update_Must_Label.Hide();
             Telephone_Update_Must_Label.Hide();
@@ -1023,7 +1021,6 @@ namespace FitnessClub
         {
             if (this.CoachName_Update_ComboBox.Text == "")
             {
-                CoachID_Update_Must_Label.Show();
                 CoachName_Update_Must_Label.Show();
                 CoachPassport_Update_Must_Label.Show();
                 CoachTelephone_Update_Must_Label.Show();
@@ -1060,7 +1057,6 @@ namespace FitnessClub
 
         private void Coach_Update_tableLayoutPanel_MouseMove(object sender, MouseEventArgs e)
         {
-            CoachID_Update_Must_Label.Hide();
             CoachName_Update_Must_Label.Hide();
             CoachPassport_Update_Must_Label.Hide();
             CoachTelephone_Update_Must_Label.Hide();
@@ -1137,7 +1133,7 @@ namespace FitnessClub
             CoachPassport_Add_Must_Label.Hide();
             CoachTelephone_Add_Must_Label.Hide();
         }
-
+        //Show or hide Required fields
         private void CoachName_Add_TextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             char l = e.KeyChar;
@@ -1189,6 +1185,51 @@ namespace FitnessClub
             Coach_dataGridView.DataSource = table;
             CoachID_Update_ComboBox.DataSource = table;
             CoachID_Delete_ComboBox.DataSource = table;
+        }
+
+        ////Staff
+        //Staff_update_panel
+        private void Staff_Update_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Staff_Update_tableLayoutPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        //Show or hide Required fields
+        private void StaffName_Update_ComboBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        //Staff_add_panel
+        private void Staff_Add_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Staff_Add_tableLayoutPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+        //Show or hide Required fields
+        private void StaffName_Add_TexBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        //Staff_delete_panel
+        private void Staff_Delete_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void About_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutProgram aboutProgram = new AboutProgram();
+            aboutProgram.Show();
         }
     }
 }
