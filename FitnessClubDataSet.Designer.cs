@@ -972,7 +972,7 @@ namespace FitnessClub {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ClientRow AddClientRow(string ClientName, int ClientPassport, string ClientTelephone, string ClientAddress, string ClientEmail) {
+            public ClientRow AddClientRow(string ClientName, string ClientPassport, string ClientTelephone, string ClientAddress, string ClientEmail) {
                 ClientRow rowClientRow = ((ClientRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1025,7 +1025,7 @@ namespace FitnessClub {
                 base.Columns.Add(this.columnClientID);
                 this.columnClientName = new global::System.Data.DataColumn("ClientName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnClientName);
-                this.columnClientPassport = new global::System.Data.DataColumn("ClientPassport", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnClientPassport = new global::System.Data.DataColumn("ClientPassport", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnClientPassport);
                 this.columnClientTelephone = new global::System.Data.DataColumn("ClientTelephone", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnClientTelephone);
@@ -1044,10 +1044,11 @@ namespace FitnessClub {
                 this.columnClientName.AllowDBNull = false;
                 this.columnClientName.MaxLength = 50;
                 this.columnClientPassport.AllowDBNull = false;
+                this.columnClientPassport.MaxLength = 50;
                 this.columnClientTelephone.AllowDBNull = false;
-                this.columnClientTelephone.MaxLength = 12;
+                this.columnClientTelephone.MaxLength = 50;
                 this.columnClientAddress.MaxLength = 50;
-                this.columnClientEmail.MaxLength = 50;
+                this.columnClientEmail.MaxLength = 30;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1311,7 +1312,7 @@ namespace FitnessClub {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public CoachRow AddCoachRow(string CoachName, int CoachPassport, string CoachTelephone, string CoachAddress, string CoachEmail) {
+            public CoachRow AddCoachRow(string CoachName, string CoachPassport, string CoachTelephone, string CoachAddress, string CoachEmail) {
                 CoachRow rowCoachRow = ((CoachRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1364,7 +1365,7 @@ namespace FitnessClub {
                 base.Columns.Add(this.columnCoachID);
                 this.columnCoachName = new global::System.Data.DataColumn("CoachName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCoachName);
-                this.columnCoachPassport = new global::System.Data.DataColumn("CoachPassport", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnCoachPassport = new global::System.Data.DataColumn("CoachPassport", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCoachPassport);
                 this.columnCoachTelephone = new global::System.Data.DataColumn("CoachTelephone", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCoachTelephone);
@@ -1383,10 +1384,11 @@ namespace FitnessClub {
                 this.columnCoachName.AllowDBNull = false;
                 this.columnCoachName.MaxLength = 50;
                 this.columnCoachPassport.AllowDBNull = false;
+                this.columnCoachPassport.MaxLength = 50;
                 this.columnCoachTelephone.AllowDBNull = false;
-                this.columnCoachTelephone.MaxLength = 12;
+                this.columnCoachTelephone.MaxLength = 50;
                 this.columnCoachAddress.MaxLength = 50;
-                this.columnCoachEmail.MaxLength = 50;
+                this.columnCoachEmail.MaxLength = 25;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2012,7 +2014,7 @@ namespace FitnessClub {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FitnessClubRow AddFitnessClubRow(int FitnessClubHall, string FitnessClubAddress, string FitnessClubTelephone) {
+            public FitnessClubRow AddFitnessClubRow(string FitnessClubHall, string FitnessClubAddress, string FitnessClubTelephone) {
                 FitnessClubRow rowFitnessClubRow = ((FitnessClubRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2059,7 +2061,7 @@ namespace FitnessClub {
             private void InitClass() {
                 this.columnFitnessClubID = new global::System.Data.DataColumn("FitnessClubID", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFitnessClubID);
-                this.columnFitnessClubHall = new global::System.Data.DataColumn("FitnessClubHall", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnFitnessClubHall = new global::System.Data.DataColumn("FitnessClubHall", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFitnessClubHall);
                 this.columnFitnessClubAddress = new global::System.Data.DataColumn("FitnessClubAddress", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFitnessClubAddress);
@@ -2074,10 +2076,11 @@ namespace FitnessClub {
                 this.columnFitnessClubID.ReadOnly = true;
                 this.columnFitnessClubID.Unique = true;
                 this.columnFitnessClubHall.AllowDBNull = false;
+                this.columnFitnessClubHall.MaxLength = 50;
                 this.columnFitnessClubAddress.AllowDBNull = false;
                 this.columnFitnessClubAddress.MaxLength = 50;
                 this.columnFitnessClubTelephone.AllowDBNull = false;
-                this.columnFitnessClubTelephone.MaxLength = 12;
+                this.columnFitnessClubTelephone.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3459,9 +3462,9 @@ namespace FitnessClub {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int ClientPassport {
+            public string ClientPassport {
                 get {
-                    return ((int)(this[this.tableClient.ClientPassportColumn]));
+                    return ((string)(this[this.tableClient.ClientPassportColumn]));
                 }
                 set {
                     this[this.tableClient.ClientPassportColumn] = value;
@@ -3585,9 +3588,9 @@ namespace FitnessClub {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int CoachPassport {
+            public string CoachPassport {
                 get {
-                    return ((int)(this[this.tableCoach.CoachPassportColumn]));
+                    return ((string)(this[this.tableCoach.CoachPassportColumn]));
                 }
                 set {
                     this[this.tableCoach.CoachPassportColumn] = value;
@@ -3858,9 +3861,9 @@ namespace FitnessClub {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int FitnessClubHall {
+            public string FitnessClubHall {
                 get {
-                    return ((int)(this[this.tableFitnessClub.FitnessClubHallColumn]));
+                    return ((string)(this[this.tableFitnessClub.FitnessClubHallColumn]));
                 }
                 set {
                     this[this.tableFitnessClub.FitnessClubHallColumn] = value;
@@ -4787,40 +4790,40 @@ namespace FitnessClub.FitnessClubDataSetTableAdapters {
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientID", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "ClientID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientPassport", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientPassport", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientTelephone", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientTelephone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientPassport", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientPassport", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientTelephone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientTelephone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ClientAddress", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientAddress", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientAddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientAddress", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ClientEmail", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientEmail", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientEmail", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientEmail", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientEmail", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientEmail", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Client] ([ClientName], [ClientPassport], [ClientTelephone], [ClientAddress], [ClientEmail]) VALUES (@ClientName, @ClientPassport, @ClientTelephone, @ClientAddress, @ClientEmail);
 SELECT ClientID, ClientName, ClientPassport, ClientTelephone, ClientAddress, ClientEmail FROM Client WHERE (ClientID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientPassport", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientPassport", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientTelephone", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientTelephone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientPassport", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientPassport", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientTelephone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientTelephone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientAddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientAddress", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientEmail", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientEmail", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientEmail", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientEmail", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Client] SET [ClientName] = @ClientName, [ClientPassport] = @ClientPassport, [ClientTelephone] = @ClientTelephone, [ClientAddress] = @ClientAddress, [ClientEmail] = @ClientEmail WHERE (([ClientID] = @Original_ClientID) AND ([ClientName] = @Original_ClientName) AND ([ClientPassport] = @Original_ClientPassport) AND ([ClientTelephone] = @Original_ClientTelephone) AND ((@IsNull_ClientAddress = 1 AND [ClientAddress] IS NULL) OR ([ClientAddress] = @Original_ClientAddress)) AND ((@IsNull_ClientEmail = 1 AND [ClientEmail] IS NULL) OR ([ClientEmail] = @Original_ClientEmail)));
 SELECT ClientID, ClientName, ClientPassport, ClientTelephone, ClientAddress, ClientEmail FROM Client WHERE (ClientID = @ClientID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientPassport", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientPassport", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientTelephone", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientTelephone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientPassport", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientPassport", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientTelephone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientTelephone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientAddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientAddress", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientEmail", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientEmail", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientEmail", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientEmail", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientID", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "ClientID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientPassport", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientPassport", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientTelephone", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientTelephone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientPassport", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientPassport", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientTelephone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientTelephone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ClientAddress", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientAddress", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientAddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientAddress", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ClientEmail", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientEmail", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientEmail", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientEmail", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ClientEmail", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClientEmail", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClientID", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 18, 0, "ClientID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -4899,7 +4902,7 @@ SELECT ClientID, ClientName, ClientPassport, ClientTelephone, ClientAddress, Cli
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(decimal Original_ClientID, string Original_ClientName, int Original_ClientPassport, string Original_ClientTelephone, string Original_ClientAddress, string Original_ClientEmail) {
+        public virtual int Delete(decimal Original_ClientID, string Original_ClientName, string Original_ClientPassport, string Original_ClientTelephone, string Original_ClientAddress, string Original_ClientEmail) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((decimal)(Original_ClientID));
             if ((Original_ClientName == null)) {
                 throw new global::System.ArgumentNullException("Original_ClientName");
@@ -4907,7 +4910,12 @@ SELECT ClientID, ClientName, ClientPassport, ClientTelephone, ClientAddress, Cli
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_ClientName));
             }
-            this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_ClientPassport));
+            if ((Original_ClientPassport == null)) {
+                throw new global::System.ArgumentNullException("Original_ClientPassport");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_ClientPassport));
+            }
             if ((Original_ClientTelephone == null)) {
                 throw new global::System.ArgumentNullException("Original_ClientTelephone");
             }
@@ -4950,14 +4958,19 @@ SELECT ClientID, ClientName, ClientPassport, ClientTelephone, ClientAddress, Cli
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string ClientName, int ClientPassport, string ClientTelephone, string ClientAddress, string ClientEmail) {
+        public virtual int Insert(string ClientName, string ClientPassport, string ClientTelephone, string ClientAddress, string ClientEmail) {
             if ((ClientName == null)) {
                 throw new global::System.ArgumentNullException("ClientName");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(ClientName));
             }
-            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(ClientPassport));
+            if ((ClientPassport == null)) {
+                throw new global::System.ArgumentNullException("ClientPassport");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(ClientPassport));
+            }
             if ((ClientTelephone == null)) {
                 throw new global::System.ArgumentNullException("ClientTelephone");
             }
@@ -4996,14 +5009,19 @@ SELECT ClientID, ClientName, ClientPassport, ClientTelephone, ClientAddress, Cli
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string ClientName, int ClientPassport, string ClientTelephone, string ClientAddress, string ClientEmail, decimal Original_ClientID, string Original_ClientName, int Original_ClientPassport, string Original_ClientTelephone, string Original_ClientAddress, string Original_ClientEmail, decimal ClientID) {
+        public virtual int Update(string ClientName, string ClientPassport, string ClientTelephone, string ClientAddress, string ClientEmail, decimal Original_ClientID, string Original_ClientName, string Original_ClientPassport, string Original_ClientTelephone, string Original_ClientAddress, string Original_ClientEmail, decimal ClientID) {
             if ((ClientName == null)) {
                 throw new global::System.ArgumentNullException("ClientName");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(ClientName));
             }
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(ClientPassport));
+            if ((ClientPassport == null)) {
+                throw new global::System.ArgumentNullException("ClientPassport");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(ClientPassport));
+            }
             if ((ClientTelephone == null)) {
                 throw new global::System.ArgumentNullException("ClientTelephone");
             }
@@ -5029,7 +5047,12 @@ SELECT ClientID, ClientName, ClientPassport, ClientTelephone, ClientAddress, Cli
             else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_ClientName));
             }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_ClientPassport));
+            if ((Original_ClientPassport == null)) {
+                throw new global::System.ArgumentNullException("Original_ClientPassport");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_ClientPassport));
+            }
             if ((Original_ClientTelephone == null)) {
                 throw new global::System.ArgumentNullException("Original_ClientTelephone");
             }
@@ -5073,7 +5096,7 @@ SELECT ClientID, ClientName, ClientPassport, ClientTelephone, ClientAddress, Cli
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string ClientName, int ClientPassport, string ClientTelephone, string ClientAddress, string ClientEmail, decimal Original_ClientID, string Original_ClientName, int Original_ClientPassport, string Original_ClientTelephone, string Original_ClientAddress, string Original_ClientEmail) {
+        public virtual int Update(string ClientName, string ClientPassport, string ClientTelephone, string ClientAddress, string ClientEmail, decimal Original_ClientID, string Original_ClientName, string Original_ClientPassport, string Original_ClientTelephone, string Original_ClientAddress, string Original_ClientEmail) {
             return this.Update(ClientName, ClientPassport, ClientTelephone, ClientAddress, ClientEmail, Original_ClientID, Original_ClientName, Original_ClientPassport, Original_ClientTelephone, Original_ClientAddress, Original_ClientEmail, Original_ClientID);
         }
     }
@@ -5212,8 +5235,8 @@ SELECT ClientID, ClientName, ClientPassport, ClientTelephone, ClientAddress, Cli
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CoachID", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "CoachID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CoachName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CoachPassport", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachPassport", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CoachTelephone", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachTelephone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CoachPassport", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachPassport", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CoachTelephone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachTelephone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CoachAddress", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachAddress", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CoachAddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachAddress", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CoachEmail", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachEmail", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -5224,8 +5247,8 @@ SELECT ClientID, ClientName, ClientPassport, ClientTelephone, ClientAddress, Cli
 SELECT CoachID, CoachName, CoachPassport, CoachTelephone, CoachAddress, CoachEmail FROM Coach WHERE (CoachID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CoachName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CoachPassport", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachPassport", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CoachTelephone", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachTelephone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CoachPassport", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachPassport", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CoachTelephone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachTelephone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CoachAddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachAddress", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CoachEmail", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachEmail", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
@@ -5234,14 +5257,14 @@ SELECT CoachID, CoachName, CoachPassport, CoachTelephone, CoachAddress, CoachEma
 SELECT CoachID, CoachName, CoachPassport, CoachTelephone, CoachAddress, CoachEmail FROM Coach WHERE (CoachID = @CoachID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CoachName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CoachPassport", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachPassport", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CoachTelephone", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachTelephone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CoachPassport", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachPassport", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CoachTelephone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachTelephone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CoachAddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachAddress", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CoachEmail", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachEmail", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CoachID", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "CoachID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CoachName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CoachPassport", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachPassport", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CoachTelephone", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachTelephone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CoachPassport", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachPassport", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CoachTelephone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachTelephone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CoachAddress", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachAddress", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CoachAddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachAddress", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CoachEmail", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CoachEmail", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -5324,7 +5347,7 @@ SELECT CoachID, CoachName, CoachPassport, CoachTelephone, CoachAddress, CoachEma
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(decimal Original_CoachID, string Original_CoachName, int Original_CoachPassport, string Original_CoachTelephone, string Original_CoachAddress, string Original_CoachEmail) {
+        public virtual int Delete(decimal Original_CoachID, string Original_CoachName, string Original_CoachPassport, string Original_CoachTelephone, string Original_CoachAddress, string Original_CoachEmail) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((decimal)(Original_CoachID));
             if ((Original_CoachName == null)) {
                 throw new global::System.ArgumentNullException("Original_CoachName");
@@ -5332,7 +5355,12 @@ SELECT CoachID, CoachName, CoachPassport, CoachTelephone, CoachAddress, CoachEma
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_CoachName));
             }
-            this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_CoachPassport));
+            if ((Original_CoachPassport == null)) {
+                throw new global::System.ArgumentNullException("Original_CoachPassport");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_CoachPassport));
+            }
             if ((Original_CoachTelephone == null)) {
                 throw new global::System.ArgumentNullException("Original_CoachTelephone");
             }
@@ -5375,14 +5403,19 @@ SELECT CoachID, CoachName, CoachPassport, CoachTelephone, CoachAddress, CoachEma
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string CoachName, int CoachPassport, string CoachTelephone, string CoachAddress, string CoachEmail) {
+        public virtual int Insert(string CoachName, string CoachPassport, string CoachTelephone, string CoachAddress, string CoachEmail) {
             if ((CoachName == null)) {
                 throw new global::System.ArgumentNullException("CoachName");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(CoachName));
             }
-            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(CoachPassport));
+            if ((CoachPassport == null)) {
+                throw new global::System.ArgumentNullException("CoachPassport");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(CoachPassport));
+            }
             if ((CoachTelephone == null)) {
                 throw new global::System.ArgumentNullException("CoachTelephone");
             }
@@ -5421,14 +5454,19 @@ SELECT CoachID, CoachName, CoachPassport, CoachTelephone, CoachAddress, CoachEma
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string CoachName, int CoachPassport, string CoachTelephone, string CoachAddress, string CoachEmail, decimal Original_CoachID, string Original_CoachName, int Original_CoachPassport, string Original_CoachTelephone, string Original_CoachAddress, string Original_CoachEmail, decimal CoachID) {
+        public virtual int Update(string CoachName, string CoachPassport, string CoachTelephone, string CoachAddress, string CoachEmail, decimal Original_CoachID, string Original_CoachName, string Original_CoachPassport, string Original_CoachTelephone, string Original_CoachAddress, string Original_CoachEmail, decimal CoachID) {
             if ((CoachName == null)) {
                 throw new global::System.ArgumentNullException("CoachName");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(CoachName));
             }
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(CoachPassport));
+            if ((CoachPassport == null)) {
+                throw new global::System.ArgumentNullException("CoachPassport");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(CoachPassport));
+            }
             if ((CoachTelephone == null)) {
                 throw new global::System.ArgumentNullException("CoachTelephone");
             }
@@ -5454,7 +5492,12 @@ SELECT CoachID, CoachName, CoachPassport, CoachTelephone, CoachAddress, CoachEma
             else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_CoachName));
             }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_CoachPassport));
+            if ((Original_CoachPassport == null)) {
+                throw new global::System.ArgumentNullException("Original_CoachPassport");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_CoachPassport));
+            }
             if ((Original_CoachTelephone == null)) {
                 throw new global::System.ArgumentNullException("Original_CoachTelephone");
             }
@@ -5498,7 +5541,7 @@ SELECT CoachID, CoachName, CoachPassport, CoachTelephone, CoachAddress, CoachEma
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string CoachName, int CoachPassport, string CoachTelephone, string CoachAddress, string CoachEmail, decimal Original_CoachID, string Original_CoachName, int Original_CoachPassport, string Original_CoachTelephone, string Original_CoachAddress, string Original_CoachEmail) {
+        public virtual int Update(string CoachName, string CoachPassport, string CoachTelephone, string CoachAddress, string CoachEmail, decimal Original_CoachID, string Original_CoachName, string Original_CoachPassport, string Original_CoachTelephone, string Original_CoachAddress, string Original_CoachEmail) {
             return this.Update(CoachName, CoachPassport, CoachTelephone, CoachAddress, CoachEmail, Original_CoachID, Original_CoachName, Original_CoachPassport, Original_CoachTelephone, Original_CoachAddress, Original_CoachEmail, Original_CoachID);
         }
     }
@@ -6004,29 +6047,29 @@ SELECT DocumentID, ClientID, CoachID, FitnessClubID, StaffID, ServicesID, Date, 
                 "lubTelephone))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FitnessClubID", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "FitnessClubID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FitnessClubHall", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubHall", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FitnessClubHall", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubHall", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FitnessClubAddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubAddress", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FitnessClubTelephone", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubTelephone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FitnessClubTelephone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubTelephone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[FitnessClub] ([FitnessClubHall], [FitnessClubAddress], [FitnessClubTelephone]) VALUES (@FitnessClubHall, @FitnessClubAddress, @FitnessClubTelephone);
 SELECT FitnessClubID, FitnessClubHall, FitnessClubAddress, FitnessClubTelephone FROM FitnessClub WHERE (FitnessClubID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FitnessClubHall", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubHall", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FitnessClubHall", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubHall", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FitnessClubAddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubAddress", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FitnessClubTelephone", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubTelephone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FitnessClubTelephone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubTelephone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[FitnessClub] SET [FitnessClubHall] = @FitnessClubHall, [FitnessClubAddress] = @FitnessClubAddress, [FitnessClubTelephone] = @FitnessClubTelephone WHERE (([FitnessClubID] = @Original_FitnessClubID) AND ([FitnessClubHall] = @Original_FitnessClubHall) AND ([FitnessClubAddress] = @Original_FitnessClubAddress) AND ([FitnessClubTelephone] = @Original_FitnessClubTelephone));
 SELECT FitnessClubID, FitnessClubHall, FitnessClubAddress, FitnessClubTelephone FROM FitnessClub WHERE (FitnessClubID = @FitnessClubID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FitnessClubHall", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubHall", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FitnessClubHall", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubHall", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FitnessClubAddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubAddress", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FitnessClubTelephone", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubTelephone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FitnessClubTelephone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubTelephone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FitnessClubID", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "FitnessClubID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FitnessClubHall", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubHall", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FitnessClubHall", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubHall", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FitnessClubAddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubAddress", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FitnessClubTelephone", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubTelephone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FitnessClubTelephone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FitnessClubTelephone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FitnessClubID", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 18, 0, "FitnessClubID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -6105,9 +6148,14 @@ SELECT FitnessClubID, FitnessClubHall, FitnessClubAddress, FitnessClubTelephone 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(decimal Original_FitnessClubID, int Original_FitnessClubHall, string Original_FitnessClubAddress, string Original_FitnessClubTelephone) {
+        public virtual int Delete(decimal Original_FitnessClubID, string Original_FitnessClubHall, string Original_FitnessClubAddress, string Original_FitnessClubTelephone) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((decimal)(Original_FitnessClubID));
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_FitnessClubHall));
+            if ((Original_FitnessClubHall == null)) {
+                throw new global::System.ArgumentNullException("Original_FitnessClubHall");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_FitnessClubHall));
+            }
             if ((Original_FitnessClubAddress == null)) {
                 throw new global::System.ArgumentNullException("Original_FitnessClubAddress");
             }
@@ -6140,8 +6188,13 @@ SELECT FitnessClubID, FitnessClubHall, FitnessClubAddress, FitnessClubTelephone 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int FitnessClubHall, string FitnessClubAddress, string FitnessClubTelephone) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(FitnessClubHall));
+        public virtual int Insert(string FitnessClubHall, string FitnessClubAddress, string FitnessClubTelephone) {
+            if ((FitnessClubHall == null)) {
+                throw new global::System.ArgumentNullException("FitnessClubHall");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(FitnessClubHall));
+            }
             if ((FitnessClubAddress == null)) {
                 throw new global::System.ArgumentNullException("FitnessClubAddress");
             }
@@ -6174,8 +6227,13 @@ SELECT FitnessClubID, FitnessClubHall, FitnessClubAddress, FitnessClubTelephone 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int FitnessClubHall, string FitnessClubAddress, string FitnessClubTelephone, decimal Original_FitnessClubID, int Original_FitnessClubHall, string Original_FitnessClubAddress, string Original_FitnessClubTelephone, decimal FitnessClubID) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(FitnessClubHall));
+        public virtual int Update(string FitnessClubHall, string FitnessClubAddress, string FitnessClubTelephone, decimal Original_FitnessClubID, string Original_FitnessClubHall, string Original_FitnessClubAddress, string Original_FitnessClubTelephone, decimal FitnessClubID) {
+            if ((FitnessClubHall == null)) {
+                throw new global::System.ArgumentNullException("FitnessClubHall");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(FitnessClubHall));
+            }
             if ((FitnessClubAddress == null)) {
                 throw new global::System.ArgumentNullException("FitnessClubAddress");
             }
@@ -6189,7 +6247,12 @@ SELECT FitnessClubID, FitnessClubHall, FitnessClubAddress, FitnessClubTelephone 
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(FitnessClubTelephone));
             }
             this.Adapter.UpdateCommand.Parameters[3].Value = ((decimal)(Original_FitnessClubID));
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_FitnessClubHall));
+            if ((Original_FitnessClubHall == null)) {
+                throw new global::System.ArgumentNullException("Original_FitnessClubHall");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_FitnessClubHall));
+            }
             if ((Original_FitnessClubAddress == null)) {
                 throw new global::System.ArgumentNullException("Original_FitnessClubAddress");
             }
@@ -6223,7 +6286,7 @@ SELECT FitnessClubID, FitnessClubHall, FitnessClubAddress, FitnessClubTelephone 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int FitnessClubHall, string FitnessClubAddress, string FitnessClubTelephone, decimal Original_FitnessClubID, int Original_FitnessClubHall, string Original_FitnessClubAddress, string Original_FitnessClubTelephone) {
+        public virtual int Update(string FitnessClubHall, string FitnessClubAddress, string FitnessClubTelephone, decimal Original_FitnessClubID, string Original_FitnessClubHall, string Original_FitnessClubAddress, string Original_FitnessClubTelephone) {
             return this.Update(FitnessClubHall, FitnessClubAddress, FitnessClubTelephone, Original_FitnessClubID, Original_FitnessClubHall, Original_FitnessClubAddress, Original_FitnessClubTelephone, Original_FitnessClubID);
         }
     }
